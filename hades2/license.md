@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # HADES-RTE
 # Software Licence Agreement
 
