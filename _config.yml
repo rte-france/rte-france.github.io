@@ -1,0 +1,10 @@
+theme: jekyll-theme-slate
+title: RTE France
+description:
+
+github:
+  is_project_page: false
+  show_downloads: false
+  owner_name: RTE France
+  owner_url: https://www.rte-france.com
+
