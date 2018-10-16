@@ -1,6 +1,6 @@
 ---
 title:
 layout: redirect
-redirect: /hades/license.html
+redirect: /hades2/license.html
 ---
 
