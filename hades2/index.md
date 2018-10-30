@@ -46,7 +46,7 @@ Hades integration jars are published to maven central. Thus, to integrate Hades 
 dependencies to the `pom.xml` file:
 ```xml
 <dependency>
-    <groupId>com.rte-france</groupId>
+    <groupId>com.rte-france.powsybl</groupId>
     <artifactId>powsybl-hades2-integration</artifactId>
     <version>2.1.2</version>
     <scope>runtime</scope>
