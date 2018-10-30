@@ -5,7 +5,7 @@ layout: default
 
 # Configuration
 To use Hades for remedial actions simulations, set the `load-flow-factory` of the
-[load-flow-action-simulator](http://powsybl.github.io/docs/configuration/module/load-flow-action-simulator.html) module
+[load-flow-action-simulator](http://powsybl.github.io/docs/configuration/modules/load-flow-action-simulator.html) module
 to `com.rte_france.powsybl.hades2.Hades2Factory`.
 
 To setup Hades, configure the [hades2](../configuration/hades2.md) module.
