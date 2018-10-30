@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+div {
+  text-align: justify;
+}
+
+footer p {
+  color: #C0C0C0;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.inner {
+  max-width: 800px;
+}
+
+// Small devices
+@media screen and (max-width: 480px) {
+
+  .inner {
+    max-width: 480px;
+  }
+
+}

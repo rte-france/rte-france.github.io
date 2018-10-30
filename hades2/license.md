@@ -1,9 +1,7 @@
 ---
+title: Hades Software License Agreement
 layout: default
 ---
-
-# HADES-RTE
-# Software Licence Agreement
 
 **PLEASE READ THIS AGREEMENT CAREFULLY BEFORE DOWNLOADING OR USING HADES - RTE SOFTWARE.**
 
@@ -21,7 +19,7 @@ Software, referred to as the "LICENSEE", **ON THE SECOND PART**,
 
 As used herein, the term “Party” shall mean RTE or the LICENSEE and the term “Parties” shall mean both of them.
 
-## RECITALS
+# RECITALS
 
 WHEREAS THE “ITESLA POWER SYSTEM TOOLS” (IPST) PROJECT AIMS AT DEVELOPING OF AN OPEN-SOURCE PLATFORM DEDICATED TO LARGE
 POWER GRID SECURITY ANALYSIS.
@@ -32,7 +30,7 @@ THAT PERFORM THESE FUNCTIONS AND THAT CAN BE USED IN THE IPST PLATFORM.
 WHEREAS, RTE HOLDS THE NECESSARY RIGHTS ON THE SOFTWARE, INCLUDING THE RIGHT TO PROVIDE A LICENSE TO THE LICENSEE AND
 GRANT THE RIGHTS GRANTED HEREIN.
 
-## ARTICLE 1 - DEFINITIONS
+# ARTICLE 1 - DEFINITIONS
 For the purpose of the present license agreement, referred to as the "AGREEMENT", the capital terms below shall have the
 meanings set forth:
 
@@ -59,9 +57,9 @@ appropriate for execution or interpretation by a computer.
 such as printed listing or in an encoded machine readable form such as might be recorded on disks or tapes, from which a
 printed listing can be made by processing it with a computer.
 
-## ARTICLE 2 – NATURE AND SCOPE OF THE AGREEMENT
+# ARTICLE 2 – NATURE AND SCOPE OF THE AGREEMENT
 
-### 2.1 GRANT OF LICENCE
+## 2.1 GRANT OF LICENCE
 RTE grant to the LICENSEE a worldwide, royalty-free, personal, non-exclusive, non-sublicensable, non-transferable and
 terminable LICENSE to use the SOFTWARE.
 
@@ -79,7 +77,7 @@ memory or storage device of a computer that he/she is currently using; or (iii) 
 storage device, such as a local area network ("LAN") or secure intranet, and allow access devices, such as a personal
 computers, to access and use that licensed copy of the SOFTWARE over a private network.
 
-### 2.2 LIMITATIONS
+## 2.2 LIMITATIONS
 The LICENSEE is not authorized to:
 - sub-license or transfer the SOFTWARE, and more generally to transfer the rights and obligations set forth in this AGREEMENT,
 - reproduce the SOFTWARE (by any means and/or on any medium) , unless explicitly stated otherwise in the present AGREEMENT,
@@ -92,7 +90,7 @@ carry out any reverse engineering operation on the SOFTWARE, outside of the limi
 - make or have a third party make any change to the SOFTWARE, including to correct any errors;
 - merge all or part of the SOFTWARE into other computer programs.
 
-## ARTICLE 3 – TERM AND TERMINATION
+# ARTICLE 3 – TERM AND TERMINATION
 This AGREEMENT shall come into force on the date that LICENSEE accepts this Agreement or the date that Licensee first
 downloads or uses Software (“Effective Date”).
 
@@ -105,7 +103,7 @@ by any mean, in the case of non-compliance with confidentiality and/or intellect
 transmission to a non-authorized third party, or non-authorized copying of the SOFTWARE or DOCUMENTATION and especially
 as stipulated in the LICENSE.
 
-## ARTICLE 4 - INTELLECTUAL PROPERTY RIGHTS
+# ARTICLE 4 - INTELLECTUAL PROPERTY RIGHTS
 This AGREEMENT shall not be interpreted as granting to the LICENSEE any property rights on the SOFTWARE and associated
 documentation. The LICENSEE shall have no rights in or to the SOFTWARE other than the right to use it in accordance with
 the terms of the AGREEMENT.
@@ -116,7 +114,7 @@ documents it generates concerning the SOFTWARE and the SOFTWARE USE.
 The LICENSEE is not authorized to delete or modify the Copyright notice mentioned on the SOFTWARE nor on whatever support
 (advertising materials, brochures, etc.)
 
-## ARTICLE 5 - WARRANTY
+# ARTICLE 5 - WARRANTY
 
 5.1 The SOFTWARE is provided “as is”, consequently, RTE does not warrant that the functions contained in the program will
 meet LICENSEE’s requirements or that the operation of the SOFTWARE will be uninterrupted or error free. RTE is not
@@ -133,7 +131,7 @@ provided "as is" and expressly subject to the disclaimer in Article 5.4.
 incorporated into this AGREEMENT or any collateral contract, are hereby excluded, including warranties or other terms as
 to satisfactory quality, fitness for purpose or the use of reasonable skill and care.
 
-## ARTICLE 6 – CONFIDENTIALITY
+# ARTICLE 6 – CONFIDENTIALITY
 Any information concerning RTE or the LICENSEE and any information relating to the SOFTWARE (hereinafter "Confidential(s)
 Information(s)") is subject to the following confidentiality obligations.
 
@@ -157,7 +155,7 @@ publicly available prior to this AGREEMENT or is made publicly available by the 
 (b) is rightfully received by the receiving Party from third parties without accompanying secrecy obligations; (c) is
 already in the receiving Party’s possession and was lawfully received from sources other than the disclosing Party.
 
-## ARTICLE 7 - LIABILITY
+# ARTICLE 7 - LIABILITY
 RTE shall not be held liable under the terms herein for any damages resulting from the use, by the LICENSEE, of the
 SOFTWARE or more generally of the rights granted under this AGREEMENT.
 
@@ -167,7 +165,7 @@ provided by RTE within the framework of this AGREEMENT.
 RTE shall not be held liable in case of infringement of intellectual property rights of a third party, provided that it
 complied with the obligation of best efforts set forth in Article 8.
 
-## ARTICLE 8 - THIRD PARTY CLAIM
+# ARTICLE 8 - THIRD PARTY CLAIM
 8.1 RTE shall make all its best efforts to ensure that the SOFTWARE does not infringe third party rights, including but
 not limited to Intellectual Property Rights.
 
@@ -182,18 +180,18 @@ terms of the AGREEMENT.
 8.4 The LICENSEE hereby waives any right to claim any additional compensation if an infringement of third party rights
 occurs.
 
-## ARTICLE 9 – GENERAL
+# ARTICLE 9 – GENERAL
 No waiver or amendment shall be effective unless made by a written instrument signed by both Parties.
 
 Therefore, the LICENSEE shall not transfer, pledge or assign the present AGREEMENT nor delegate any duties hereunder
 without first obtaining in each instance the prior written consent of RTE.
 
-## ARTICLE 10 - LANGUAGE AND AUTHENTICITY
+# ARTICLE 10 - LANGUAGE AND AUTHENTICITY
 The language to the AGREEMENT is English.
 
 In the case of the AGREEMENT being translated, only the original version in English language will hold faith.
 
-## ARTICLE 11 - NOTICES
+# ARTICLE 11 - NOTICES
 Any notice, demand or other communication concerning this AGREEMENT shall be in writing and sent to:
 ```
 RTE
@@ -204,13 +202,13 @@ Sébastien Murgey
 with a copy to Mr Yannick Jacquemart, same address.
 ```
 
-## ARTICLE 12 – APPLICABLE LAW AND JURISDICTION
+# ARTICLE 12 – APPLICABLE LAW AND JURISDICTION
 The AGREEMENT shall be governed by and construed in accordance with the laws of France.
 
 In case of dispute, after attempting to seek an amicable settlement through negotiations at senior executive level, any
 dispute relating to the AGREEMENT shall be settled with the Paris courts.
 
-### Annex 1 – Open-Source components
+## Annex 1 – Open-Source components
 HADES-RTE SOFTWARE contains software components licensed under Open-Source license (Open-Source Software). The Open Source
 Software components and their licenses are listed hereafter:
 
@@ -235,7 +233,7 @@ http://www.apache.org/licenses/
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-#### 1. Definitions.
+### 1. Definitions.
 "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9
 of this document.
 
@@ -274,13 +272,13 @@ writing by the copyright owner as "Not a Contribution."
 "Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has
 been received by Licensor and subsequently incorporated within the Work.
 
-#### 2. Grant of Copyright License.
+### 2. Grant of Copyright License.
 Subject to the terms and conditions of this License, each Contributor hereby
 grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license
 to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the
 Work and such Derivative Works in Source or Object form.
 
-#### 3. Grant of Patent License.
+### 3. Grant of Patent License.
 Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide,
 non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made,
 use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims
@@ -290,7 +288,7 @@ any entity (including a cross-claim or counterclaim in a lawsuit) alleging that 
 within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under
 this License for that Work shall terminate as of the date such litigation is filed.
 
-####4. Redistribution.
+### 4. Redistribution.
 You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications,
 and in Source or Object form, provided that You meet the following conditions:
 1. You must give any other recipients of the Work or Derivative Works a copy of this License; and
