@@ -1,5 +1,5 @@
 ---
 title:
 layout: redirect
-redirect: /hades/index.html
+redirect: /hades2/index.html
 ---
