@@ -25,7 +25,7 @@ hades2:
 ```xml
 <config>
     <componentDefaultConfig>
-        <SecurityAnalysisFactory>com.rte_france.powsybl.hades2.Hades2Factory</SecurityAnalysisFactory>
+        <SecurityAnalysisFactory>com.rte_france.powsybl.hades2.Hades2SecurityAnalysisFactory</SecurityAnalysisFactory>
     </componentDefaultConfig>
     
     <hades2>
