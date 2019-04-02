@@ -143,6 +143,10 @@ parameter are:
 The `writeState` property is an optional property that defines if debug files should be exported. The default value of
 this parameter is `false`.
 
+## hvdcAcEmulation
+The `hvdcAcEmulation` property is an optional property that defines if AC emulation is simulated. The default value of
+this parameter is `true`.
+
 # Example
 This is an example of a loadflow parameters file with the `ADNLoadFlowParameters` extension:
 ```json
