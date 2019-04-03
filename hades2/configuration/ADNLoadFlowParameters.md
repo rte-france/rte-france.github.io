@@ -225,7 +225,8 @@ This is an example of a loadflow parameters file with the `ADNLoadFlowParameters
             }
           ]
         }
-      ]
+      ],
+      "hvdcAcEmulation" : true
     }
   }
 }
