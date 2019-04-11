@@ -7,10 +7,7 @@ layout: default
 
 **BETWEEN**
 
-**RTE Réseau de transport d’électricité**, a limited company governed by a Management Board and a Supervisory Board,
-listed in the Nanterre Trade and Business Register under the number 444 619 258, having its registered offices at 1,
-Terrasse Bellini, TSA 41000, 92919 LA DEFENSE Cedex, represented herein by Yannick Jacquemart, in his capacity of head
-of the R&D Direction, authorised for this purpose, referred to in the present document as *"RTE"*, **ON THE FIRST PART**,
+**RTE Réseau de transport d’électricité**, a limited company governed by a Management Board and a Supervisory Board, listed in the Nanterre Trade and Business Register under the number 444 619 258, having its head office located at Batiment Window, 7C Place du Dôme, 92800 LA DEFENSE, represented herein by Yannick Jacquemart, in his capacity of head of the R&D Direction, authorised for this purpose, referred to in the present document as *"RTE"*, **ON THE FIRST PART**,
 
 **AND**
 
@@ -87,8 +84,7 @@ adapt, amend, transform, modify the SOFTWARE,
 kind of use, the SOFTWARE.
 - compile, decompile, disassemble, reverse engineer or translate the SOFTWARE, and more generally carry out or attempt to
 carry out any reverse engineering operation on the SOFTWARE, outside of the limits set down by Law;
-- make or have a third party make any change to the SOFTWARE, including to correct any errors;
-- merge all or part of the SOFTWARE into other computer programs.
+- make or have a third party make any change to the SOFTWARE, including to correct any errors.
 
 # ARTICLE 3 – TERM AND TERMINATION
 This AGREEMENT shall come into force on the date that LICENSEE accepts this Agreement or the date that Licensee first
@@ -195,8 +191,8 @@ In the case of the AGREEMENT being translated, only the original version in Engl
 Any notice, demand or other communication concerning this AGREEMENT shall be in writing and sent to:
 ```
 RTE
-100, Esplanade du Général de Gaulle
-92932 Paris La Défense Cedex
+7C Place du Dôme
+92800 Paris La Défense
 FRANCE
 Sébastien Murgey
 with a copy to Mr Yannick Jacquemart, same address.

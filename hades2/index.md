@@ -3,16 +3,32 @@ title: Hades
 layout: default
 ---
 
-Hades is a free software distributed by [RTE France](https://www.rte-france.com) to run loadflow, security analysis,
-sensitivity computations and remedial actions simulations on a grid. RTE provides closed-source jars to integrate Hades
-to an application based on [powsybl](http://www.powsybl.com). Read the complete software [license](license.md) agreement.
+Hades is a free software distributed by [RTE France](https://www.rte-france.com) to run loadflow, security analysis, sensitivity computations and remedial actions simulations on a grid.
+
+# License
+
+RTE provides closed-source jars to integrate Hades to an application based on [powsybl](http://www.powsybl.com). Hades2 is distributed in the form of closed source because it is a legacy software that is not suitable for open source collaboration. Please read the complete software [license](license.md) agreement before going further.
 
 # Installation guide
-Hades is compatible with GNU/Linux environment.
+Hades is compatible with Linux (64 bits) and with Windows (64 bits) environments.
 
 ## Download
-Hades is downloadable from the [RTE iPST](http://www.rte.itesla-pst.org/) website. Once the form is filled, an email is
-sent with the download link.
+
+<div>
+To download and use Hades2, please agree to the license agreement by checking the following checkbox:<br>
+
+<style>
+#hades2-link { display: none;}
+#hades2-toggle:checked + #hades2-link { display: block;}
+</style>
+<p></p>
+<label for="hades2-toggle">I agree to the hades2 license agreement</label>
+<input id="hades2-toggle" type="checkbox" name="hades2-toggle">
+<div id="hades2-link">
+<p> Linux distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.0.0/hades2-V6.0.0.2-linux.tar.gz">hades2-V6.0.0.2-linux.tar.gz</a></p>
+<p> Windows distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.0.0/hades2-V6.0.0.2-linux.tar.gz">hades2-V6.0.0.1-windows.zip</a></p>
+</div>
+</div>
 
 ## Install
 To install Hades, simply extract the content of the archive.
@@ -22,10 +38,10 @@ $> cd hades2-V5.5.1.2
 $> ./hades2
 init iodico
 RTE load flow tool - RTE HADES trial and academic license expiring the 31/10/2019
-usage : 
+usage :
 
 commands :
- hades2 LF    <adn_in> <adn_out>  [<logs.xml>] [<timeout(secondes)>] [<nbThreads>] : calcul 
+ hades2 LF    <adn_in> <adn_out>  [<logs.xml>] [<timeout(secondes)>] [<nbThreads>] : calcul
 
  hades2 RSCT  <adn_in> <fic_out> : calcul matrices RSCT
 
@@ -69,3 +85,9 @@ computations.
 ## Remedial Action simulation
 Read this [documentation](features/action-simulator.md) page to learn how to configure powsybl to use Hades for remedial
 actions simulations.
+
+# What's next ?
+
+Our goal is to have also open source computation modules integrated to PowSyBl (load flows, time domain simulators, optimizers, etc.). This is however work in progress and we would welcome contributions in that field.
+
+Please also note that a simple DC load-flow is currently being developed mainly for demo purposes. The code is in the repository [powsybl-incubator](https://github.com/powsybl/powsybl-incubator).
