@@ -26,7 +26,7 @@ To download and use Hades2, please agree to the license agreement by checking th
 <input id="hades2-toggle" type="checkbox" name="hades2-toggle">
 <div id="hades2-link">
 <p> Linux distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.0.0/hades2-V6.0.0.2-linux.tar.gz">hades2-V6.0.0.2-linux.tar.gz</a></p>
-<p> Windows distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.0.0/hades2-V6.0.0.2-linux.tar.gz">hades2-V6.0.0.1-windows.zip</a></p>
+<p> Windows distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.0.0/hades2-V6.0.0.1-windows.zip">hades2-V6.0.0.1-windows.zip</a></p>
 </div>
 </div>
 
