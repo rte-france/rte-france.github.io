@@ -24,7 +24,8 @@ parameter are:
 
 ## computedConnectedComponentNumber
 The `computedConnectedComponentNumber` property is an optional property that defines the number of the connected
-components to simulate. The default value of this parameter is `1`.
+components to simulate. If `computedConnectedComponentNumber` is 0, the calculation is done on all the calculable connected components.
+The default value of this parameter is `1`.
 
 ## countriesToBalance
 The `countriesToBalance` property is an optional property that defines the list of [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1)
