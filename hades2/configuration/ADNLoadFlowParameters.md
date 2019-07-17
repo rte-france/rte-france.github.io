@@ -10,6 +10,10 @@ page to learn more about load flow generic parameters.
 
 # Optional properties
 
+## anglePerte
+The `anglePerte` property is an optional property that defines if dielectric loss is considered during the Hades2 loadflow.
+The default value of this parameter is `true`.
+
 ## balanceNormEpsilon
 The `balanceNormEpsilon` property is an optional property that defines the epsilon on production-consumption balance. The
 default value of this parameter is `-1`.
@@ -72,6 +76,10 @@ The `debugMode` property is an optional property that defines the level of debug
 The `detectPermanentLimitViolation` property is an optional property that defines if Hades has to detect current violations
 for permanent limit if the equipments has temporary limits. The default value of this parameter is `false`.
 
+## hvdcAcEmulation
+The `hvdcAcEmulation` property is an optional property that defines if AC emulation is simulated. The default value of
+this parameter is `true`.
+
 ## limitReductions
 The `limitReductions` property is an optional property that defines the limit reductions for permanent and temporary
 limits for a given range of voltage. See the [ADNLimitReductionsParameters](ADNLimitReductionsParameters.md) page for
@@ -122,6 +130,19 @@ value of this parameter is `-1`.
 The `oldJacobian` property is an optional property that defines the way to generate the Jacobian matrix. Use `false` to
 have a human readable Jacobian matrix or `true` to increase performances. The default value of this parameter is `false`.
 
+## reactiveCapabilityCurveWithMoreThanSixPoints
+The `reactiveCapabilityCurveWithMoreThanSixPoints` property is an optional property that defines how will be handled reactive capability
+curve with more than six points during an Hades2 Loadflow. Its possible values are:
+- `INFINITE_DIAGRAM`: these curves are imported as infinite diagrams
+- `MIN_MAX_POINTS_DIAGRAM`: these curves are imported as four-points diagram with extreme values of the real curve
+- `THROW_EXCEPTION`: an exception is thrown when this kind of curves is defined in the network
+
+The default value of this parameter is `INFINITE_DIAGRAM`.
+
+## remoteVoltage
+The `remoteVoltage` property is an optional property that defines if remote voltage regulation will be used during the Hades2 loadflow
+or not. The default value of this parameter is `true`.
+
 ## slackNodeDeterminationMode
 The `slackNodeDeterminationMode` property is an optional property that defines the voltage range in which the slack node
 can be chosen. The default value of this parameter is `BILAN_400`. The supported values for this parameter are:
@@ -143,10 +164,6 @@ parameter are:
 ## writeState
 The `writeState` property is an optional property that defines if debug files should be exported. The default value of
 this parameter is `false`.
-
-## hvdcAcEmulation
-The `hvdcAcEmulation` property is an optional property that defines if AC emulation is simulated. The default value of
-this parameter is `true`.
 
 # Example
 This is an example of a loadflow parameters file with the `ADNLoadFlowParameters` extension:
