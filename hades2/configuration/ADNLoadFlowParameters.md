@@ -122,6 +122,11 @@ value of this parameter is `-1`.
 The `oldJacobian` property is an optional property that defines the way to generate the Jacobian matrix. Use `false` to
 have a human readable Jacobian matrix or `true` to increase performances. The default value of this parameter is `false`.
 
+## reactiveCapabilityCurveWithMoreThanThreePoints
+The 'reactiveCapabilityCurveWithMoreThanThreePoints' property is an optional property that proposes an approximation for generators which reactive capacibility curve has more than three (P, Qmin, Qmax) points. By default, an expection is thrown because the simulator can not deal with reactive capability curve with more than 3 points. The supported values are:
+- INFINITE_DIAGRAM: the curve is replaced by an infinite diagram
+- MIN_MAX_POINTS_DIAGRAM: the curve is replaced by a minimum value (in fact the minimal Q of the curve) and a maximum value (in fact the maximum of the curve)
+
 ## slackNodeDeterminationMode
 The `slackNodeDeterminationMode` property is an optional property that defines the voltage range in which the slack node
 can be chosen. The default value of this parameter is `BILAN_400`. The supported values for this parameter are:
