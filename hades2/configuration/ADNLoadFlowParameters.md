@@ -106,9 +106,11 @@ the nominal voltage. The default value of this parameter is `150`.
 The `minBusesNbInConnectedComponent` property is an optional property that defines the minimum number of buses in a
 connected component to be computed. The default value of this parameter is `1`.
 
-## minimumReactance
-The `minimumReactance` property is an optional property that defines the minimal threshold for reactance during ADN export if
-the [`withMinimumReactance`](#withMinimumReactance) property is set to `true`. The default value of this parameter is `0.01`.
+## minimumReactancePerUnit
+The `minimumReactancePerUnit` property is an optional property that defines the minimal threshold for reactance per unit during ADN export. 
+When the resistance **and** reactance of a quad are null, the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. 
+If the reactance per unit of a quad is lower than `minimumReactancePerUnit` **and** if the [`withMinimumReactance`](#withMinimumReactance) property is set to `true`, 
+the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. The default value of this parameter is `0.000625`.
 
 ## minRealisticVoltage
 The `minRealisticVoltage` property is an optional property that defines percentage of minimum realistic voltage regarding
@@ -163,7 +165,7 @@ parameter are:
 
 ## withMinimumReactance
 The `withMinimumReactance` property is an optional property that defines if there should be a minimal threshold for reactance during
-ADN export or not. The default value of this parameter is `true`.  
+ADN export or not (please see [minimumReactancePerUnit](#minimumReactancePerUnit) for more details). The default value of this parameter is `true`.  
 
 ## writeState
 The `writeState` property is an optional property that defines if debug files should be exported. The default value of
