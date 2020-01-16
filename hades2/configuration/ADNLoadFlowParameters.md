@@ -165,7 +165,7 @@ parameter are:
 
 ## withMinimumReactance
 The `withMinimumReactance` property is an optional property that defines if there should be a minimal threshold for reactance during
-ADN export or not (please see [minimumReactancePerUnit](#minimumReactancePerUnit) for more details). The default value of this parameter is `true`.  
+ADN export or not (please see [`minimumReactancePerUnit`](#minimumReactancePerUnit) for more details). The default value of this parameter is `true`.  
 
 ## writeState
 The `writeState` property is an optional property that defines if debug files should be exported. The default value of
