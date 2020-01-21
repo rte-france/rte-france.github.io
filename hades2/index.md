@@ -73,6 +73,19 @@ Read how to create a powsybl bundle based on [itools](http://powsybl.github.io/d
 or on the [Grid Study Environment](http://powsybl.github.io/docs/installation/javafx-packager.html), a JavaFX desktop
 application.
 
+The itools-packager plugin of powsybl-core will copy all the maven dependencies to the share/java folder of the distribution. To enable a feature, you have to add a runtime dependency to the pom.xml file. If you do not want to modify the pom.xml file, you have to download the dependencies for Hades2 integration in the share/java folder of the itools distribution. The dependencies are available on Maven Central following that [link](https://mvnrepository.com/artifact/com.rte-france.powsybl). The following jar files have to be downloaded:
+````
+powsybl-adn-api
+powsybl-hades2-integration
+powsybl-rte-commons
+powsybl-adn-export
+powsybl-iidm-cvg-extensions
+powsybl-iidm-shortcircuits
+powsybl-adn-xml
+powsybl-rte-core
+powsybl-adn
+```
+
 # Features
 
 ## Load-flow
