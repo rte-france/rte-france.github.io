@@ -108,7 +108,7 @@ connected component to be computed. The default value of this parameter is `1`.
 
 ## minimumReactancePerUnit
 The `minimumReactancePerUnit` property is an optional property that defines the minimal threshold for reactance per unit during ADN export. 
-When the resistance **and** reactance of a quad are null, the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. 
+When the resistance **and** reactance of a quad both equal to zero, the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. 
 If the reactance per unit of a quad is lower than `minimumReactancePerUnit` **and** if the [`withMinimumReactance`](#withMinimumReactance) property is set to `true`, 
 the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. The default value of this parameter is `0.000625`.
 
