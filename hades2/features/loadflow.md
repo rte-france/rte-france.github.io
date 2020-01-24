@@ -5,6 +5,7 @@ layout: default
 
 # Configuration
 To use Hades for load-flow computations, set the `default` property of the [load-flow](http://powsybl.github.io/docs/configuration/modules/load-flow.html) module to `Hades2`.
+
 **Note**: In previous Powsybl releases (before 3.0.0), this was configured in the `load-flow-factory` property with the value `com.rte_france.powsybl.hades2.Hades2Factory`.
 
 To setup Hades, configure the [hades2](../configuration/hades2.md) module.
@@ -15,7 +16,7 @@ load-flow:
     default: Hades2
     
 hades2:
-    homeDir: /home/user/hades2-V5.5.1.2
+    homeDir: /home/user/hades2-V{{ site.hades2.version }}
     debug: false
     useSax: true
 ```
@@ -28,7 +29,7 @@ hades2:
     </load-flow>
     
     <hades2>
-        <homeDir>/home/user/hades2-V5.5.1.2</homeDir>
+        <homeDir>/home/user/hades2-V{{ site.hades2.version }}</homeDir>
         <debug>false</debug>
         <useSax>true</useSax>
     </hades2>

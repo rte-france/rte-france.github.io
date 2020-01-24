@@ -3,10 +3,12 @@ title: ADNLoadFlowParameters
 layout: default
 ---
 
-The `com.rte_france.powsybl.iidm.export.adn.ADNLoadFlowParameters` is an extension of the
-`com.powsybl.loadflow.LoadFlowParameters` class that provides specific configuration for the load flow
-mode of Hades. Read this [documentation](http://powsybl.github.io/docs/configuration/parameters/LoadFlowParameters.html)
-page to learn more about load flow generic parameters.
+The [ADNLoadFlowParameters](https://javadoc.io/doc/com.rte-france.powsybl/powsybl-rte-core/latest/com/rte_france/powsybl/iidm/export/adn/ADNLoadFlowParameters.html)
+is an extension of the [LoadFlowParameters](https://javadoc.io/doc/com.powsybl/powsybl-core/latest/com/powsybl/loadflow/LoadFlowParameters.html)
+class that provides specific configuration for the load flow mode of Hades.
+
+Read this [documentation](http://powsybl.github.io/docs/configuration/parameters/LoadFlowParameters.html) page to learn
+more about load flow generic parameters.
 
 # Optional properties
 
