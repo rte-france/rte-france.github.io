@@ -12,6 +12,18 @@ RTE provides closed-source jars to integrate Hades to an application based on [p
 # Installation guide
 Hades is compatible with Linux (64 bits) and with Windows (64 bits) environments.
 
+## Requirements
+Hades2 uses [OpenMP](https://www.openmp.org/) to compute in parallel.
+
+### Linux
+Under GNU/Linux operating system, this library can be installed using the packages manager:
+```
+$> yum install libgomp
+```
+
+### Windows
+Under Windows operating system, you have to install [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-US/download/details.aspx?id=48145). 
+
 ## Download
 
 <div>
