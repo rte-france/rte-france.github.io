@@ -3,11 +3,12 @@ title: ADNSecurityAnalysisParameters
 layout: default
 ---
 
-The `com.rte_france.powsybl.iidm.export.adn.ADNSecurityAnalysisParameters` is an extension of the
-`com.powsybl.security.SecurityAnalysisParameters` class that provides specific configuration for the security analysis
-mode of Hades. Read this [documentation](http://powsybl.github.io/docs/configuration/parameters/SecurityAnalysisParameters.html)
-page to learn more about security analysis generic parameters. Read this [documentation](ADNLoadFlowParameters.md) page
-to learn more about the Hades load-flow configuration.
+The [ADNSecurityAnalysisParameters](https://javadoc.io/doc/com.rte-france.powsybl/powsybl-rte-core/latest/com/rte_france/powsybl/iidm/export/adn/ADNSecurityAnalysisParameters.html)
+is an extension of the [SecurityAnalysisParameters](https://javadoc.io/doc/com.powsybl/powsybl-core/latest/com/powsybl/security/SecurityAnalysisParameters.html)
+class that provides specific configuration for the security analysis mode of Hades.
+Read this [documentation](http://powsybl.github.io/docs/configuration/parameters/SecurityAnalysisParameters.html) page to
+learn more about security analysis generic parameters. Read this [documentation](ADNLoadFlowParameters.md) page to learn
+more about the Hades load-flow configuration.
 
 # Optional properties
 

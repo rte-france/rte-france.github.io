@@ -4,9 +4,9 @@ layout: default
 ---
 
 # ADNLimitReductionsParameters
-The `com.rte_france.powsybl.iidm.export.adn.ADNLimitReductionsParameters` class is used to model limit reductions for a
-given voltage range (inclusive). It contains a coefficient for permanent limits and a list of coefficients for temporary
-limits.
+The [ADNLimitReductionsParameters](https://javadoc.io/doc/com.rte-france.powsybl/powsybl-rte-core/latest/com/rte_france/powsybl/iidm/export/adn/ADNLimitReductionsParameters.html)
+class is used to model limit reductions for a given voltage range (inclusive). It contains a coefficient for permanent
+limits and a list of coefficients for temporary limits.
 
 ## Optional properties
 

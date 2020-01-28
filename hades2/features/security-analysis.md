@@ -6,7 +6,7 @@ layout: default
 # Configuration
 To use Hades for security analysis computations, set the `SecurityAnalysisFactory` property of the
 [componentDefaultConfig](http://powsybl.github.io/docs/configuration/modules/componentDefaultConfig.html) module to
-`com.rte_france.powsybl.hades2.Hades2SecurityAnalysisFactory`
+[Hades2SecurityAnalysisFactory](https://javadoc.io/doc/com.rte-france.powsybl/powsybl-rte-core/latest/com/rte_france/powsybl/hades2/Hades2SecurityAnalysisFactory.html).
 
 To setup Hades, configure the [hades2](../configuration/hades2.md) module.
 
@@ -16,7 +16,7 @@ componentDefaultConfig:
     SecurityAnalysisFactory: com.rte_france.powsybl.hades2.Hades2SecurityAnalysisFactory
     
 hades2:
-    homeDir: /home/user/hades2-V5.5.1.2
+    homeDir: /home/user/hades2-V{{ site.hades2.version }}
     debug: false
     useSax: true
 ```
@@ -29,7 +29,7 @@ hades2:
     </componentDefaultConfig>
     
     <hades2>
-        <homeDir>/home/user/hades2-V5.5.1.2</homeDir>
+        <homeDir>/home/user/hades2-V{{ site.hades2.version }}</homeDir>
         <debug>false</debug>
         <useSax>true</useSax>
     </hades2>

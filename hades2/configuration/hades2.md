@@ -28,7 +28,7 @@ this property is `false` which means XML files are parsed with DOM by default.
 ## YAML
 ```yaml
 hades2:
-    homeDir: /home/user/hades2-V5.5.1.2
+    homeDir: /home/user/hades2-V{{ site.hades2.version }}
     timeout: 60
     debug: false
     useSAX: true
@@ -37,7 +37,7 @@ hades2:
 ## XML
 ```xml
 <hades2>
-    <homeDir>/home/user/hades2-V5.5.1.2</homeDir>
+    <homeDir>/home/user/hades2-V{{ site.hades2.version }}</homeDir>
     <timeout>60</timeout>
     <debug>false</debug>
     <useSAX>false</useSAX>

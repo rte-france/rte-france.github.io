@@ -7,7 +7,7 @@ Hades is a free software distributed by [RTE France](https://www.rte-france.com)
 
 # License
 
-RTE provides closed-source jars to integrate Hades to an application based on [powsybl](http://www.powsybl.com). Hades2 is distributed in the form of closed source because it is a legacy software that is not suitable for open source collaboration. Please read the complete software [license](license.md) agreement before going further.
+RTE provides closed-source jars to integrate Hades to an application based on [powsybl](http://www.powsybl.org). Hades2 is distributed in the form of closed source because it is a legacy software that is not suitable for open source collaboration. Please read the complete software [license](license.md) agreement before going further.
 
 # Installation guide
 Hades is compatible with Linux (64 bits) and with Windows (64 bits) environments.
@@ -25,16 +25,19 @@ To download and use Hades2, please agree to the license agreement by checking th
 <label for="hades2-toggle">I agree to the hades2 license agreement</label>
 <input id="hades2-toggle" type="checkbox" name="hades2-toggle">
 <div id="hades2-link">
-<p> Linux distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.4.0/hades2-V6.4.0.1.1-linux.tar.gz">hades2-V6.4.0.1.1-linux.tar.gz</a></p>
-<p> Windows distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V6.4.0/hades2-V6.4.0.1.1-windows.zip">hades2-V6.4.0.1.1-windows.zip</a></p>
+<ul>
+<li>Linux distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V{{ site.hades2.release }}/hades2-V{{ site.hades2.version }}-linux.tar.gz">hades2-V{{ site.hades2.version }}-linux.tar.gz</a></li>
+<li>Windows distribution (64 bits): <a href="https://github.com/rte-france/hades2-distribution/releases/download/V{{ site.hades2.release }}/hades2-V{{ site.hades2.version }}-windows.zip">hades2-V{{ site.hades2.version }}-windows.zip</a></li>
+</ul>
+<p>Previous releases can be found on <a href="https://github.com/rte-france/hades2-distribution/releases">Hades2 Github page</a>.</p>
 </div>
 </div>
 
 ## Install
 To install Hades, simply extract the content of the archive.
 ```shell
-$> tar xf hades2-V6.2.0.1-linux.tar.gz
-$> cd hades2-V6.2.0.1
+$> tar xf hades2-V{{ site.hades2.version }}-linux.tar.gz
+$> cd hades2-V{{ site.hades2.version }}
 $> ./hades2
 init iodico
 RTE load flow tool - RTE HADES trial and academic license expiring the 31/10/2019
@@ -64,7 +67,13 @@ dependencies to the `pom.xml` file:
 <dependency>
     <groupId>com.rte-france.powsybl</groupId>
     <artifactId>powsybl-hades2-integration</artifactId>
-    <version>2.6.0</version>
+    <version>{{ site.hades2.integration_version }}</version>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>log4j-over-slf4j</artifactId>
+    <version>1.7.21</version>
     <scope>runtime</scope>
 </dependency>
 ```
@@ -73,9 +82,12 @@ Read how to create a powsybl bundle based on [itools](http://powsybl.github.io/d
 or on the [Grid Study Environment](http://powsybl.github.io/docs/installation/javafx-packager.html), a JavaFX desktop
 application.
 
-The `itools-packager` plugin of powsybl-core will copy all the maven dependencies to the share/java folder of the distribution. To enable a feature, you have to add a runtime dependency to the `pom.xml` file. 
+The `itools-packager` plugin of powsybl-core will copy all the maven dependencies to the share/java folder of the distribution.
+To enable a feature, you have to add a runtime dependency to the `pom.xml` file. 
 
-If you do not want to modify the `pom.xml` file, you have to download the dependencies for Hades2 integration in the `share/java` folder of the itools distribution. The dependencies are available on Maven Central following that [link](https://mvnrepository.com/artifact/com.rte-france.powsybl). The following jar files have to be downloaded:
+If you do not want to modify the `pom.xml` file, you have to download the dependencies for Hades2 integration in the `share/java`
+folder of the itools distribution. The dependencies are available on Maven Central following that [link](https://mvnrepository.com/artifact/com.rte-france.powsybl).
+The following jar files have to be downloaded:
 ```
 powsybl-adn-api
 powsybl-hades2-integration
@@ -103,6 +115,8 @@ actions simulations.
 
 # What's next ?
 
-Our goal is to have also open source computation modules integrated to PowSyBl (load flows, time domain simulators, optimizers, etc.). This is however work in progress and we would welcome contributions in that field.
+Our goal is to have also open source computation modules integrated to PowSyBl (load flows, time domain simulators, optimizers, etc.).
+This is however work in progress and we would welcome contributions in that field.
 
-Please also note that a simple DC load-flow is currently being developed mainly for demo purposes. The code is in the repository [powsybl-incubator](https://github.com/powsybl/powsybl-incubator).
+Please also note that a simple DC load-flow is currently being developed mainly for demo purposes. The code is in the repository
+[powsybl-open-loadflow](https://github.com/powsybl/powsybl-open-loadflow).

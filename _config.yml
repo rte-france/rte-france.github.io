@@ -8,3 +8,7 @@ github:
   owner_name: RTE France
   owner_url: https://www.rte-france.com
 
+hades2:
+  release: 6.4.0
+  version: 6.4.0.1.1
+  integration_version: 2.8.0

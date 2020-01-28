@@ -20,7 +20,7 @@ load-flow-action-simulator:
     max-iterations: 10
     
 hades2:
-    homeDir: /home/user/hades2-V5.5.1.2
+    homeDir: /home/user/hades2-V{{ site.hades2.version }}
     debug: false
     useSax: true
 ```
@@ -36,7 +36,7 @@ hades2:
     </load-flow-action-simulator>
     
     <hades2>
-        <homeDir>/home/user/hades2-V5.5.1.2</homeDir>
+        <homeDir>/home/user/hades2-V{{ site.hades2.version }}</homeDir>
         <debug>false</debug>
         <useSax>true</useSax>
     </hades2>
