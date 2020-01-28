@@ -12,6 +12,10 @@ more about load flow generic parameters.
 
 # Optional properties
 
+## anglePerte
+The `anglePerte` property is an optional property that defines if the ADN `anglePerte` attribute is exported during ADN export for tap changers or not.
+The default value of this parameter is `true`.
+
 ## balanceNormEpsilon
 The `balanceNormEpsilon` property is an optional property that defines the epsilon on production-consumption balance. The
 default value of this parameter is `-1`.
@@ -58,21 +62,25 @@ voltages are used.
 ## dcVoltageInitMode
 The `dcVoltageInitMode` property is an optional property that defines the voltage initialization mode. The default value
 of this parameter is `V_NORMALISE_NDC`. The supported values for this parameter are:
-- V_CALCULE: active/reactive load-flow
-- V_NORMALISE_NAC: flat with reintegration of losses
-- V_NORMALISE_NDC: flat
+- `V_CALCULE`: active/reactive load-flow
+- `V_NORMALISE_NAC`: flat with reintegration of losses
+- `V_NORMALISE_NDC`: flat
 
 ## debugMode
 The `debugMode` property is an optional property that defines the level of debug. The default value of this parameter is
 `NO_DEBUG`. The supported values for this parameter are:
-- NO_DEBUG: no debug information
-- ES_LF: debug for load-flow
-- ES_AS: debug for security analysis
-- ETATS_INTERMEDIAIRES: debug the intermediate states
+- `NO_DEBUG`: no debug information
+- `ES_LF`: debug for load-flow
+- `ES_AS`: debug for security analysis
+- `ETATS_INTERMEDIAIRES`: debug the intermediate states
 
 ## detectPermanentLimitViolation
 The `detectPermanentLimitViolation` property is an optional property that defines if Hades has to detect current violations
 for permanent limit if the equipments has temporary limits. The default value of this parameter is `false`.
+
+## hvdcAcEmulation
+The `hvdcAcEmulation` property is an optional property that defines if AC emulation is simulated. The default value of
+this parameter is `true`.
 
 ## limitReductions
 The `limitReductions` property is an optional property that defines the limit reductions for permanent and temporary
@@ -82,23 +90,29 @@ more details.
 ## logLevel
 The `logLevel` property is an optional property that defines the log level. The default value of this parameter is `DEBUG`.
 The supported values for this parameter are:
-- PAS: minimal logging level
-- EXPERT: expert logging level
-- DEBUG: debug logging level
+- `PAS`: minimal logging level
+- `EXPERT`: expert logging level
+- `DEBUG`: debug logging level
 
 ## luFactorizationMode
 The `luFactorizationMode` property is an optional property that defines the LU factorization implementation to use. The
 default value of this parameter is `RLU`. The supported values for this parameter are:
-- RLU: RTE LU factorization implementation
-- KLU: SuiteSparse LU factorization implementation
+- `RLU`: RTE LU factorization implementation
+- `KLU`: SuiteSparse LU factorization implementation
 
 ## maxRealisticVoltage
 The `maxRealisticVoltage` property is an optional property that defines percentage of maximum realistic voltage regarding
 the nominal voltage. The default value of this parameter is `150`.
 
 ## minBusesNbInConnectedComponent
-THe `minBusesNbInConnectedComponent` property is an optional property that defines the minimum number of buses in a
+The `minBusesNbInConnectedComponent` property is an optional property that defines the minimum number of buses in a
 connected component to be computed. The default value of this parameter is `1`.
+
+## minimumReactancePerUnit
+The `minimumReactancePerUnit` property is an optional property that defines the minimal threshold for reactance per unit during ADN export. 
+When the resistance **and** reactance of a quad both equal to zero, the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. 
+If the reactance per unit of a quad is lower than `minimumReactancePerUnit` **and** if the [`withMinimumReactance`](#withMinimumReactance) property is set to `true`, 
+the reactance per unit of this quad is cut to this `minimumReactancePerUnit`. The default value of this parameter is `0.000625`.
 
 ## minRealisticVoltage
 The `minRealisticVoltage` property is an optional property that defines percentage of minimum realistic voltage regarding
@@ -129,11 +143,15 @@ The `reactiveCapabilityCurveWithMoreThanThreePoints` property is an optional pro
 - INFINITE_DIAGRAM: the curve is replaced by an infinite diagram
 - THREE_POINTS_DIAGRAM: the curve is replaced by an approximative three points diagram
 
+## remoteVoltageGenerators
+The `remoteVoltageGenerators` property is an optional property that defines if remote voltage regulation for generators is rendered as such
+during ADN export or transformed into local voltage regulation using cross products. The default value of this parameter is `true`.
+
 ## slackNodeDeterminationMode
 The `slackNodeDeterminationMode` property is an optional property that defines the voltage range in which the slack node
 can be chosen. The default value of this parameter is `BILAN_400`. The supported values for this parameter are:
-- BILAN_400: the slack node can be chosen on 360-450 kV
-- BILAN_225_400: the slack node can be chosen on 180-420 kV
+- `BILAN_400`: the slack node can be chosen on 360-450 kV
+- `BILAN_225_400`: the slack node can be chosen on 180-420 kV
 
 ## svcRegulation
 The `svcRegulation` property is an optional property that defines if the SVCs are simulated. The default value of this
@@ -143,17 +161,17 @@ parameter is `true`.
 The `transformerVoltageControlSimulationMode` property is an optional property that defines the method of simulation of
 tap changers in the load flow. The default value of this parameter is `SIMU_REG_HORS_NR`. The supported values for this
 parameter are:
-- SIMU_REG_HORS_NR: SVCs are simulated outside the Jacobian
-- SIMU_REG_DANS_NR: SVCs are simulated in the Jacobian (experimental)
-- SIMU_REG_HORS_LF: SVCs are simulated in an external loop (experimental)
+- `SIMU_REG_HORS_NR`: SVCs are simulated outside the Jacobian
+- `SIMU_REG_DANS_NR`: SVCs are simulated in the Jacobian (experimental)
+- `SIMU_REG_HORS_LF`: SVCs are simulated in an external loop (experimental)
+
+## withMinimumReactance
+The `withMinimumReactance` property is an optional property that defines if there should be a minimal threshold for reactance during
+ADN export or not (please see [`minimumReactancePerUnit`](#minimumReactancePerUnit) for more details). The default value of this parameter is `true`.  
 
 ## writeState
 The `writeState` property is an optional property that defines if debug files should be exported. The default value of
 this parameter is `false`.
-
-## hvdcAcEmulation
-The `hvdcAcEmulation` property is an optional property that defines if AC emulation is simulated. The default value of
-this parameter is `true`.
 
 # Example
 This is an example of a loadflow parameters file with the `ADNLoadFlowParameters` extension:
