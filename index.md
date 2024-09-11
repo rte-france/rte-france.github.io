@@ -1,5 +1,6 @@
 ---
 title:
-layout: redirect
-redirect: /hades2/index.html
+layout: default
 ---
+
+# This website is under construction
