@@ -1,6 +1,15 @@
-theme: jekyll-theme-slate
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 title: RTE France
 description:
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 github:
   is_project_page: false
