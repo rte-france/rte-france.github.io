@@ -13,7 +13,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-minimal_mistakes_skin: air
+minimal_mistakes_skin: rte
 
 github:
   is_project_page: false
