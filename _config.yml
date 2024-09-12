@@ -1,18 +1,39 @@
 remote_theme: mmistakes/minimal-mistakes@4.26.2
-title: RTE France
-description:
+title: RTE's Open Source Projects
+logo: assets/images/RTE_LogoSeul_RVB.png
+copyright: RTE France
+copyright_url: https://www.rte-france.com
 
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
 collections:
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
+
+minimal_mistakes_skin: air
 
 github:
   is_project_page: false
   show_downloads: false
   owner_name: RTE France
   owner_url: https://www.rte-france.com
+
+atom_feed:
+  hide: true
+
+twitter:
+  username: rte_france
+
+footer:
+  links:
+    - icon: "fab fa-fw fa-square-x-twitter"
+      url: https://twitter.com/rte_france
+    - icon: "fab fa-fw fa-youtube-square"
+      url: https://www.youtube.com/user/myRTEtube
+    - icon: "fab fa-fw fa-linkedin"
+      url: https://www.linkedin.com/company/rte_245681
+    - icon: "fab fa-fw fa-square-instagram"
+      url: https://www.instagram.com/rte_france
