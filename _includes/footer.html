@@ -1,3 +1,5 @@
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a></div>
+
 <div class="page__footer-follow">
     <ul class="social-icons">
         {% if site.data.ui-text[site.locale].follow_label %}
@@ -7,7 +9,7 @@
         {% if site.footer.links %}
         {% for link in site.footer.links %}
         {% if link.url %}
-        <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+        <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true" style="color:white;"></i> {{ link.label }}</a></li>
         {% endif %}
         {% endfor %}
         {% endif %}
@@ -17,5 +19,3 @@
         {% endunless %}
     </ul>
 </div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>
