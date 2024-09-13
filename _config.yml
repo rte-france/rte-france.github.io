@@ -1,8 +1,8 @@
 remote_theme: mmistakes/minimal-mistakes@4.26.2
 title: Open Source Projects
 logo: assets/images/RTE_LogoSeul_RVB.png
-copyright: RTE France
-copyright_url: https://www.rte-france.com
+copyright: RTE France. Unless otherwise indicated, content is licensed under CC-BY-4.0.
+copyright_url: https://creativecommons.org/licenses/by/4.0/
 
 plugins:
   - jekyll-remote-theme
@@ -12,6 +12,13 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+
+#include:
+#  - _pages
+#
+#tag_archive:
+#  type: liquid
+#  path: /tags/
 
 minimal_mistakes_skin: rte
 
