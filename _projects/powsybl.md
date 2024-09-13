@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: project
-excerpt: "PowSyBl (Power System Blocks) is a framework that makes it easy to write complex software for power systems’ simulations and analysis."
+excerpt: "PowSyBl is a framework that makes it easy to write complex software for power systems’ simulations and analysis."
 header:
     image: /assets/images/logo_lfe_powsybl.png
     teaser: assets/images/logo_lfe_powsybl.png
@@ -12,4 +12,4 @@ license-url: https://www.powsybl.org/pages/project/license.html
 documentation: https://powsybl.readthedocs.io/en/latest/
 ---
 
-PowSyBl is a framework that makes it easy to write complex software for power systems’ simulations and analysis.
+PowSyBl (Power System Blocks) is a framework that makes it easy to write complex software for power systems’ simulations and analysis.
