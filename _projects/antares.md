@@ -5,7 +5,7 @@ excerpt: "Antares-Simulator is a power system simulator for quantifying the adeq
 header:
     image: /assets/images/AntaresSimulator_Logo-RVB-01.png
     teaser: assets/images/AntaresSimulator_Logo-RVB-01.png
-github: https://github.com/AntaresSimulatorTeam/Antares_Simulator
+github: https://github.com/AntaresSimulatorTeam
 website: https://antares-simulator.org/
 license: MPL 2.0
 license-url: https://github.com/AntaresSimulatorTeam/Antares_Simulator/blob/develop/COPYING.txt
