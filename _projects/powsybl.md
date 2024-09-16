@@ -12,7 +12,7 @@ license: MPL 2.0
 license-url: https://www.powsybl.org/pages/project/license.html
 documentation: https://powsybl.readthedocs.io/en/latest/
 community: https://powsybl.slack.com
-tags: [LFEnergy, MPL2.0]
+categories: [LFEnergy, MPL2.0]
 ---
 
 PowSyBl (Power System Blocks) is a framework that makes it easy to write complex software for power systems’ simulations and analysis.

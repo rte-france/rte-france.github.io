@@ -13,9 +13,10 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-#include:
-#  - _pages
-#
+include:
+  - _pages
+  - _projects
+
 #tag_archive:
 #  type: liquid
 #  path: /tags/

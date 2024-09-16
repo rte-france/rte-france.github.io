@@ -1,5 +1,5 @@
 ---
-title: "Projects by Tag"
+title: "Projects by tag"
 permalink: /tags/
 layout: tags
 ---
