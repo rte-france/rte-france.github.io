@@ -15,7 +15,7 @@ community: https://powsybl.slack.com
 tags: [LFEnergy, MPL2.0]
 ---
 
-PowSyBl (Power System Blocks) is an open-source library written in Java, dedicated to electrical grid modeling, visualization and simulation. The power system blocks may be used through Python scripts for a quick operations, but also be assembled to build state-of-the-art applications.
+PowSyBl (Power System Blocks) is an open-source library written in Java, dedicated to electrical grid modeling, visualization and simulation. The power system blocks may be used through Python scripts for quick operations, but also be assembled to build state-of-the-art applications.
 
 PowSyBl is part of the LF Energy Foundation, a project of The Linux Foundation.
 
