@@ -1,6 +1,6 @@
 ---
-title:
-layout: default
+layout: collection
+collection: projects
+entries_layout: grid
+classes: wide
 ---
-
-# This website is under construction
