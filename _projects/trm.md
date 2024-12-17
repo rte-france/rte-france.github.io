@@ -7,11 +7,9 @@ header:
   image: /assets/images/trm/logo_trm.png
   teaser: assets/images/trm/logo_trm.png
 github: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm
-#website: https://www.gridsuite.org/
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
 documentation:  https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/blob/main/doc/algorithm.md
-#community: https://gridsuite.slack.com
 tags: [MPL2.0]
 ---
 
