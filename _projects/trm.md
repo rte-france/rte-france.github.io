@@ -3,9 +3,9 @@ title: "TRM algorithm"
 show-title: false
 layout: project
 excerpt: "TRM algorithm is a package to compute the Transmission Reliability Margin."
-#header:
-#  image: /assets/images/gridsuite/logo_gridsuite.png
-#  teaser: assets/images/gridsuite/logo_gridsuite.png
+header:
+  image: /assets/images/trm/logo_trm.jpeg
+  teaser: assets/images/trm/logo_trm.jpeg
 github: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm
 #website: https://www.gridsuite.org/
 license: MPL 2.0
