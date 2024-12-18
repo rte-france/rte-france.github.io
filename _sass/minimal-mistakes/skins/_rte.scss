@@ -21,3 +21,18 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 .page__footer-follow .social-icons .svg-inline--fa {
     color: inherit;
 }
+
+.archive__item-teaser {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    height: 15em;
+    margin: 0.5em;
+  
+    img {
+        width: 100%;
+        position: absolute;
+        top:-100%; left:0; right: 0; bottom:-100%;
+        margin: auto;
+    }
+  }

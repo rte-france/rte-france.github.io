@@ -26,7 +26,7 @@ You can use the apps to:
 - GridStudy: study one network by running different kind of simulations on it.
 
 # GridExplore
-GridExplore allows you to import your data and setup your explorations with filters or contingency lists:
+GridExplore allows you to import your data and set up your explorations with filters or contingency lists:
 
  - import network cases.
  - create network studies from these cases.
@@ -52,4 +52,4 @@ The Results tab allows you to analyze simulations results in the results tabs.
 
 The Logs tab allows you to read network reports generated during the import or during the execution of simulations.
 
-Contact us !
+Contact us!

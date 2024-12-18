@@ -2,7 +2,7 @@
 title: # Put a title for your project
 show-title: # Set to false if the header.image is your logo with the title of the project, false otherwise
 layout: project
-excerpt: # a brief phrase that will show up on the home page
+excerpt: # a brief phrase that will show up on the home page (truncated to 200 characters)
 header:
     image: # the image / logo shown on the project page
     teaser: # a small thumbnail shown on the home page
