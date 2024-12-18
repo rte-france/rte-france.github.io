@@ -6,7 +6,7 @@ excerpt: "Grid2Op a testbed platform to model sequential decision making in powe
 header:
     image: /assets/images/grid2op/grid2op_logo.png
     teaser: assets/images/grid2op/grid2op_teaser.png
-github: https://github.com/gridop
+github: https://github.com/Grid2op
 website: https://grid2op.readthedocs.io/en/latest/
 license: MPL 2.0
 license-url: https://github.com/Grid2op/grid2op/blob/master/LICENSE.md
