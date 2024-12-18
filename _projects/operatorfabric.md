@@ -23,7 +23,7 @@ OperatorFabric is a modular, extensible, industrial-strength platform for use in
 It aims to facilitate operational activities for utilities in two ways:
 
 * Centralize real time business events in a single place to avoid having multiple screens/software. To do so, OperatorFabric provides 
-    * event dispatching rules on a per user basis (based on groups, organizational entities, processes, etc.)
+    * event dispatching rules on a per-user basis (based on groups, organizational entities, processes, etc.)
     * event-sending endpoints for business applications 
     * a mechanism of templating to customize events rendering (using HTML5)
     * a view of the events on a timeline or a calendar 
