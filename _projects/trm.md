@@ -2,7 +2,7 @@
 title: "TRM algorithm"
 show-title: false
 layout: project
-excerpt: "TRM algorithm is a package to compute the Transmission Reliability Margin."
+excerpt: "TRM algorithm is a Maven package to compute the Transmission Reliability Margin."
 header:
   image: /assets/images/trm/logo_trm.png
   teaser: assets/images/trm/logo_trm.png
