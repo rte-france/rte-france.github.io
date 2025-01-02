@@ -1,0 +1,10 @@
+{% assign entries = include.entries | default: site[include.collection] | where_exp: "post", "post.category == include.category" %}
+
+<div>
+    <h2>{{include.category-title}}</h2>
+    <div>
+        {%- for post in entries -%}
+        {% include archive-single.html type=include.type %}
+        {%- endfor -%}
+    </div>
+</div>

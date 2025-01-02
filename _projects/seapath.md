@@ -1,11 +1,12 @@
 ---
 title: "Seapath"
+category: "lfe"
 show-title: false
 layout: project
 excerpt: "Seapath helps create and manage a cluster of virtual machines optimized for real-time workloads"
 header:
-    image: /assets/images/seapath/logo_seapath.png
-    teaser: assets/images/seapath/logo_seapath.png
+    image: /assets/images/seapath/seapath.svg
+    teaser: assets/images/seapath/seapath.svg
 github: https://github.com/seapath
 website: https://lfenergy.org/projects/seapath/
 license: Apache 2.0

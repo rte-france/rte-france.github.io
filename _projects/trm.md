@@ -1,5 +1,6 @@
 ---
 title: "TRM algorithm"
+category: "rte"
 show-title: false
 layout: project
 excerpt: "TRM algorithm is a Maven package to compute the Transmission Reliability Margin."

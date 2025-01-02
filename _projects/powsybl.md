@@ -1,11 +1,12 @@
 ---
 title: "PowSyBl"
+category: "lfe"
 show-title: false
 layout: project
 excerpt: "PowSyBl is a an open-source set of Power System Blocks dedicated to grid analysis, visualization, and simulation."
 header:
-    image: /assets/images/powsybl/logo_lfe_powsybl.png
-    teaser: assets/images/powsybl/logo_lfe_powsybl.png
+    image: /assets/images/powsybl/powsybl.svg
+    teaser: assets/images/powsybl/powsybl.svg
 github: https://github.com/powsybl
 website: https://www.powsybl.org/
 license: MPL 2.0
