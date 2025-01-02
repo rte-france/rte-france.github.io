@@ -1,6 +1,5 @@
 ---
 title: "Grid2op"
-category: "rte"
 show-title: false
 layout: project
 excerpt: "Grid2Op a testbed platform to model sequential decision making in power systems"

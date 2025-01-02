@@ -1,6 +1,5 @@
 ---
 title: "GridSuite"
-category: "rte"
 show-title: false
 layout: project
 excerpt: "GridSuite is a suite of apps to operate and design electrical grids."

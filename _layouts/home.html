@@ -5,25 +5,24 @@ layout: default
 <div id="main" role="main">
     {{ content }}
 
-    {% assign entries_layout = page.entries_layout | default: 'list' %}
-    <div class="entries-{{ entries_layout }}">
-        {% include documents-collection.html collection=page.collection type=entries_layout category="lfe"
+    <div class="entries-grid">
+        {% include documents-collection.html collection="projects_lfe" type="grid"
         category-title="Linux Foundation Energy projects" %}
     </div>
 
     <hr>
 
-    <div class="entries-{{ entries_layout }}">
-        {% include documents-collection.html collection=page.collection sort_by=page.sort_by
-        sort_order=page.sort_order type=entries_layout category="rte" category-title="rte-france foundation
+    <div class="entries-grid">
+        {% include documents-collection.html collection="projects_rte" sort_by=page.sort_by
+        sort_order=page.sort_order type="grid" category-title="RTE-France foundation
         projects" %}
     </div>
 
     <hr>
 
-    <div class="entries-{{ entries_layout }}">
-        {% include documents-collection.html collection=page.collection sort_by=page.sort_by
-        sort_order=page.sort_order type=entries_layout category="contribution" category-title="RTE actively
+    <div class="entries-grid">
+        {% include documents-collection.html collection="projects_contribution" sort_by=page.sort_by
+        sort_order=page.sort_order type="grid" category-title="RTE actively
         contributes in" %}
     </div>
 </div>

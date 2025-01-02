@@ -14,10 +14,13 @@ layout: default
 
 <div id="main" role="main">
 
-    <article class="page" itemscope itemtype="https://schema.org/CreativeWork" {% if page.locale %}
+    <article {% if page.locale %}
              lang="{{ page.locale }}" {% endif %}>
         {% if page.header.image %}
-        <img src="{{ page.header.image }}" style="margin-top: 1em; margin-bottom: 1em"></a>
+        <div style="margin-top: 2em; margin-bottom: 2em">
+            <img src="{{ page.header.image }}"
+                 style="width: 80%; display: block; margin: auto">
+        </div>
         {% endif %}
         {% if page.title %}
         <meta itemprop="headline"
@@ -43,43 +46,46 @@ layout: default
             <section class="page__content" itemprop="text">
                 <!-- buttons -->
                 <div style="margin-bottom: 20px">
-                    {% if page.license %}
-                    <div style="display:inline-block;position:relative;">
-                        <div><a href="{{ page.license-url }}" class="btn btn--primary"><i
-                                class="fa-solid fa-file-contract"
-                                style="margin-right:10px;"></i>{{
-                            page.license }}</a></div>
-                    </div>
-                    {% endif %}
-                    {% if page.github %}
-                    <div style="display:inline-block;position:relative;">
-                        <div><a href="{{ page.github }}" class="btn btn--primary"><i class="fa-brands fa-github"
-                                                                                     style="margin-right:10px;"></i>GitHub</a>
+                    <div style="display: block; margin: auto">
+                        {% if page.license %}
+                        <div style="display:inline-block;position:relative;">
+                            <div><a href="{{ page.license-url }}" class="btn btn--primary"><i
+                                    class="fa-solid fa-file-contract"
+                                    style="margin-right:10px;"></i>{{
+                                page.license }}</a></div>
                         </div>
-                    </div>
-                    {% endif %}
-                    {% if page.community %}
-                    <div style="display:inline-block;position:relative;">
-                        <div><a href="{{ page.community }}" class="btn btn--primary"><i class="fa-solid fa-user-group"
-                                                                                        style="margin-right:10px;"></i>Community</a>
+                        {% endif %}
+                        {% if page.github %}
+                        <div style="display:inline-block;position:relative;">
+                            <div><a href="{{ page.github }}" class="btn btn--primary"><i class="fa-brands fa-github"
+                                                                                         style="margin-right:10px;"></i>GitHub</a>
+                            </div>
                         </div>
-                    </div>
-                    {% endif %}
-                    {% if page.website %}
-                    <div style="display:inline-block;position:relative;">
-                        <div><a href="{{ page.website }}" class="btn btn--primary"><i
-                                class="fa-solid fa-arrow-up-right-from-square"
-                                style="margin-right:10px;"></i>Website</a>
+                        {% endif %}
+                        {% if page.community %}
+                        <div style="display:inline-block;position:relative;">
+                            <div><a href="{{ page.community }}" class="btn btn--primary"><i
+                                    class="fa-solid fa-user-group"
+                                    style="margin-right:10px;"></i>Community</a>
+                            </div>
                         </div>
-                    </div>
-                    {% endif %}
-                    {% if page.documentation %}
-                    <div style="display:inline-block;position:relative;">
-                        <div><a href="{{ page.documentation }}" class="btn btn--primary"><i class="fa-solid fa-book"
-                                                                                            style="margin-right:10px;"></i>Documentation</a>
+                        {% endif %}
+                        {% if page.website %}
+                        <div style="display:inline-block;position:relative;">
+                            <div><a href="{{ page.website }}" class="btn btn--primary"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    style="margin-right:10px;"></i>Website</a>
+                            </div>
                         </div>
+                        {% endif %}
+                        {% if page.documentation %}
+                        <div style="display:inline-block;position:relative;">
+                            <div><a href="{{ page.documentation }}" class="btn btn--primary"><i class="fa-solid fa-book"
+                                                                                                style="margin-right:10px;"></i>Documentation</a>
+                            </div>
+                        </div>
+                        {% endif %}
                     </div>
-                    {% endif %}
                 </div>
                 {{ content }}
             </section>
