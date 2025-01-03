@@ -11,7 +11,12 @@ This GitHub pages website aims to centralize links to RTE's GitHub projects.
 3. Fill out the template; you can find inspiration in existing project pages
 4. Add your logo / images to the ["assets/images"](assets/images) directory if needed (create a subdirectory for your
    project)
-5. To preview the result on your PC, you can run the following lines:
+5. To preview the result on your PC, you must first install ruby bundler & development kits, for example on ubuntu:
+   ~~~bash
+   apt install ruby-bundler
+   apt install ruby-dev
+   ~~~
+   Then run the following lines:
    ~~~bash
    bundle install
    bundle exec jekyll serve
