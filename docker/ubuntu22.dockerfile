@@ -27,4 +27,6 @@ COPY entrypoint.sh /entrypoint.sh
 # We need to execute entrypoint.sh as root in order to give permissions to user "rte" on the project path
 USER root
 ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
-CMD cd /home/rte/rte-france.github.io && bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000
+CMD cd /home/rte/rte-france.github.io \
+    && bundle install \
+    && bundle exec jekyll serve --destination /home/rte/_site --force_polling -H 0.0.0.0 -P 4000
