@@ -13,7 +13,7 @@ ENV LC_ALL en_US.UTF-8
 
 # Use non-root user
 RUN useradd -u 8877 -m rte
-#USER rte
+USER rte
 # Set user-specific gem home
 RUN mkdir -p /home/rte/gems
 ENV GEM_HOME=/home/rte/gems
@@ -23,5 +23,8 @@ ENV PAGES_REPO_NWO="rte-france/rte-france.github.io"
 
 RUN mkdir /home/rte/rte-france.github.io
 COPY entrypoint.sh /entrypoint.sh
+
+# We need to execute entrypoint.sh as root in order to give permissions to user "rte" on the project path
+USER root
 ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
-ENTRYPOINT cd /home/rte/rte-france.github.io && bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000
+CMD cd /home/rte/rte-france.github.io && bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000
