@@ -10,8 +10,14 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
+# Use non-root user
+RUN useradd -u 8877 -m rte
+USER rte
+# Set user-specific gem home
+RUN mkdir -p /home/rte/gems
+ENV GEM_HOME=/home/rte/gems
+
 # Set site name
 ENV PAGES_REPO_NWO="rte-france/rte-france.github.io"
 
-# TODO : change user (don't use root)
 ENTRYPOINT cd /rte-france.github.io && bundle install && bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000
