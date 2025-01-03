@@ -6,13 +6,14 @@
 $background-color: #eeeeee !default;
 $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
-$primary-color: #00A6D9 !default;
+$primary-color: #00a6d9 !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
 $link-color: #393e46 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+@import "minimal-mistakes"; // import minimal-mistakes mixines
 
 .page__footer {
   color: #fff !important; // override
@@ -37,5 +38,103 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     right: 0;
     bottom: -100%;
     margin: auto;
+  }
+}
+
+.greedy-nav .site-logo {
+  img {
+    //RTE logo size
+    height: 5rem;
+    width: 5rem;
+    max-height: 5rem;
+  }
+
+  .site-title {
+    //RTE title size
+    font-size: 1.5rem;
+  }
+}
+
+#main {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.masthead {
+  .masthead__inner-wrap {
+    padding: 0;
+  }
+}
+
+.entries-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .entries-grid-header {
+    display: flex;
+    gap: 1rem; // gap between line and text in header
+    hr.header-line {
+      height: 2px; // line weight
+      border: none;
+      flex: 1 1 auto;
+      background-color: $primary-color;
+    }
+  }
+
+  .entries-grid-items {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include breakpoint($small) {
+      @include breakpoint($medium) {
+        grid-template-columns: 1fr 1fr 1fr;
+        .grid__item:nth-child(3n + 1):nth-last-child(-n + 1) {
+          grid-column-start: 2; // display first element in the middle
+        }
+      }
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .grid__item {
+      width: 100%;
+      margin: 0;
+      p {
+        margin: 0;
+      }
+      .archive__item-teaser {
+        max-height: 200px;
+      }
+      .archive__item-excerpt {
+        padding: 0rem 1rem;
+      }
+    }
+  }
+}
+
+.card {
+  border-radius: 0.5rem;
+  --tw-shadow: 0px 2px 6px 0px rgba(17, 22, 26, 0.16), 0px 4px 10px 0px rgba(17, 22, 26, 0.1);
+  --tw-shadow-colored: 0px 2px 6px 0px var(--tw-shadow-color), 0px 4px 10px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  padding: 1rem;
+  background-color: white;
+  height: 100%;
+}
+
+.archive__item {
+  position: relative;
+  .archive__item-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
   }
 }
