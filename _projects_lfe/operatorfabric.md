@@ -4,8 +4,8 @@ show-title: false
 layout: project
 excerpt: OperatorFabric is a modular, extensible, industrial-strength platform for alarming and coordination processes.
 header:
-    image: /assets/images/operatorfabric/logo_lfe_operatorfabric.png
-    teaser: assets/images/operatorfabric/logo_lfe_operatorfabric_resized.png
+    image: /assets/images/operatorfabric/operatorfabric.svg
+    teaser: assets/images/operatorfabric/operatorfabric.svg
 github: https://github.com/opfab/
 website: https://opfab.github.io/
 license: MPL 2.0
