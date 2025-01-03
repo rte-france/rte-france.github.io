@@ -11,16 +11,20 @@ This GitHub pages website aims to centralize links to RTE's GitHub projects.
 3. Fill out the template; you can find inspiration in existing project pages
 4. Add your logo / images to the ["assets/images"](assets/images) directory if needed (create a subdirectory for your
    project)
-5. To preview the result on your PC, you must first install ruby bundler & development kits, for example on ubuntu:
-   ~~~bash
-   apt install ruby-bundler
-   apt install ruby-dev
-   ~~~
-   Then run the following lines:
-   ~~~bash
-   bundle install
-   bundle exec jekyll serve
-   ~~~
+5. To preview the result on your PC, you have two alternative options:
+    1. Run in docker: just execute [docker-serve.sh](docker-serve.sh) to serve the website
+       at [http://127.0.0.1:4000/](http://127.0.0.1:4000/), and stop the container when you want to stop the server (
+       using docker stop <container_id>). Note that changes in your code will immediately be visible.
+    2. Don't use docker. You must first install ruby bundler & development kits, for example on ubuntu:
+       ~~~bash
+       apt install ruby-bundler
+       apt install ruby-dev
+       ~~~
+       Then run the following lines:
+       ~~~bash
+       bundle install
+       bundle exec jekyll serve
+       ~~~
 6. Open a pull request
 7. We will review your pull request and merge it when everything is OK!
 
