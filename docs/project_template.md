@@ -15,4 +15,4 @@ community: # a link to your community (slack, github, ...) page (optional, remov
 tags: # some tags to describe your project
 ---
 
-Free text here (written in markdown) to describe your project
+Free text here (written in markdown) to describe your project.
