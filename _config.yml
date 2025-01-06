@@ -1,5 +1,5 @@
 remote_theme: mmistakes/minimal-mistakes@4.26.2
-title: Open Source Projects
+title: Open Source Strategy
 logo: assets/images/RTE_LogoSeul_RVB.png
 copyright: RTE France. Unless otherwise indicated, content is licensed under CC-BY-4.0.
 copyright_url: https://creativecommons.org/licenses/by/4.0/
@@ -9,13 +9,21 @@ plugins:
   - jekyll-include-cache
 
 collections:
-  projects:
+  projects_lfe:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/lfe/:path/
+  projects_rte:
+    output: true
+    permalink: /projects/rte/:path/
+  projects_contribution:
+    output: true
+    permalink: /projects/contribution/:path/
 
 include:
   - _pages
-  - _projects
+  - _projects_lfe
+  - _projects_rte
+  - _projects_contribution
 
 #tag_archive:
 #  type: liquid

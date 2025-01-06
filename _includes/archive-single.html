@@ -18,7 +18,7 @@
     {% endif %}
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}
-      <div style="text-align: justify;">
+      <div>
         <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 200 }}</p>
       </div>
     {% endif %}
