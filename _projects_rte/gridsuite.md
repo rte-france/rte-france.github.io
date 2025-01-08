@@ -4,8 +4,8 @@ show-title: false
 layout: project
 excerpt: "GridSuite is a suite of apps to operate and design electrical grids."
 header:
-    image: /assets/images/gridsuite/logo_gridsuite.png
-    teaser: assets/images/gridsuite/logo_gridsuite.png
+    image: /assets/images/gridsuite/GridSuite-Logo-01.svg
+    teaser: assets/images/gridsuite/GridSuite-Logo-01.svg
 github: https://github.com/gridsuite
 website: https://www.gridsuite.org/
 license: MPL 2.0
