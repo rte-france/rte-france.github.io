@@ -2,10 +2,10 @@
 title: "Dynawo"
 show-title: false
 layout: project
-excerpt: "Dynaωo is an hybrid C++/Modelica open source suite of simulation tools for power systems. It aims at providing power system stakeholders with a transparent, flexible, interoperable and robust suite of simulation tools that could ease collaboration and cooperation in the power system community."
+excerpt: "Dynaωo is an open-source hybrid C++/Modelica suite for power system simulation."
 header:
-    image: /assets/images/dynawo/Dynawo-Logo-Color.png
-    teaser: assets/images/dynawo/Dynawo-Logo-Color.png
+    image: /assets/images/dynawo/Dynawo-Logo-Color.svg
+    teaser: assets/images/dynawo/Dynawo-Logo-Color.svg
 github: https://github.com/dynawo/dynawo
 website: https://dynawo.github.io
 license: MPL 2.0
