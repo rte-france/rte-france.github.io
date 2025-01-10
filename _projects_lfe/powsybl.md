@@ -3,9 +3,10 @@ title: "PowSyBl"
 show-title: false
 layout: project
 excerpt: "PowSyBl is a an open-source set of Power System Blocks dedicated to grid analysis, visualization, and simulation."
+breadcrumbs: true
 header:
-    image: /assets/images/powsybl/powsybl.svg
-    teaser: assets/images/powsybl/powsybl.svg
+  image: /assets/images/powsybl/powsybl.svg
+  teaser: assets/images/powsybl/powsybl.svg
 github: https://github.com/powsybl
 website: https://www.powsybl.org/
 license: MPL 2.0
@@ -24,6 +25,7 @@ One major aim of the project is to make it easy to write complex software for po
 A key characteristic of PowSyBl is its modular design, at the core of the open-source approach. It enables developers to extend or customize its features by providing their own plugins.
 
 With PowSyBl, you can create applications that can:
+
 - Handle a large variety of formats, such as CIM-CGMES for European data exchanges;
 - Allow you to visualize the network and manipulate it endlessly;
 - Perform power flow simulations and security analyses on the network;

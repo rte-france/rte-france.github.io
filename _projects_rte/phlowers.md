@@ -3,9 +3,10 @@ title: "Phlowers"
 show-title: false
 layout: project
 excerpt: "Phlowers is a set of physics-based libraries for power lines studies"
+breadcrumbs: true
 header:
-    image: /assets/images/phlowers/phlowers_fullsize_txt_banner.png
-    teaser: assets/images/phlowers/phlowers_fullsize_txt_banner.png
+  image: /assets/images/phlowers/phlowers_fullsize_txt_banner.png
+  teaser: assets/images/phlowers/phlowers_fullsize_txt_banner.png
 github: https://github.com/phlowers
 license: MPL 2.0
 license-url: https://github.com/phlowers/.github/blob/main/LICENSE
@@ -21,6 +22,6 @@ This suite includes several Python packages, available on PyPi soon:
 - [mechaphlowers](https://github.com/phlowers/mechaphlowers): a package dedicated to mechanical and geometrical calculations for overhead power lines.
 - [thermohl](https://github.com/phlowers/thermohl): a package focused on thermal analysis of overhead power lines.
 - [Coming soon] thermophlowers: a package dedicated to determine overhead power lines ampacities from meteo forecastings.
-RTE uses it to determine dynamically the permanent current limit of some strategic lines.    
+  RTE uses it to determine dynamically the permanent current limit of some strategic lines.
 
 Join us!

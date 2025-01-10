@@ -3,9 +3,10 @@ title: "Grid2op"
 show-title: false
 layout: project
 excerpt: "Grid2Op a testbed platform to model sequential decision making in power systems"
+breadcrumbs: true
 header:
-    image: /assets/images/grid2op/grid2op_logo.png
-    teaser: assets/images/grid2op/grid2op_teaser.png
+  image: /assets/images/grid2op/grid2op_logo.png
+  teaser: assets/images/grid2op/grid2op_teaser.png
 github: https://github.com/Grid2op
 website: https://grid2op.readthedocs.io/en/latest/
 license: MPL 2.0
@@ -15,11 +16,10 @@ community: https://discord.gg/cYsYrPT
 tags: [MPL2.0]
 ---
 
-
-Grid2op (Grid To Operate) is an open-source library written mainly in python. It's main purpose is the 
+Grid2op (Grid To Operate) is an open-source library written mainly in python. It's main purpose is the
 study of sequential decision making in power system. It can be seen as way to "gamify" the real time grid operations.
 
-One of the major aim of the grid2op project is to make it easy to set up experiments and assess how well a given "strategy" (meaning a suite of different actions taken one after another) is performing on operating a given powergrid. 
+One of the major aim of the grid2op project is to make it easy to set up experiments and assess how well a given "strategy" (meaning a suite of different actions taken one after another) is performing on operating a given powergrid.
 
 The core grid2op package is the entry point to a whole eco-system, which includes different "modules" for studying in depth some "strategies" (`grid2viz`), use some state-of-the art solvers (`pypowsybl2grid`), the ability to generate new environments (in particular time series, `chronix2grid`) and list of "strategies" already proven to work on some cases (`l2rpn-baselines`, `grid2op-milp-agent`, `learningtoalert`) :
 
@@ -31,5 +31,4 @@ The core grid2op package is the entry point to a whole eco-system, which include
 - [lightsim2grid](https://github.com/Grid2op/lightsim2grid) is a grid2op "backend" that is a port of Pandapower in c++ and is optimized for speed and usability in grid2op
 - [pypowsybl2grid](https://github.com/Grid2op/pypowsybl2grid) is another grid2op "backend", currently under heavy development. It aims at bringing all the power of the powsybl framework (including its capacity to simulate in great detail a powergrid) into the grid2op ecosystem
 - [LearningToAlert](https://github.com/Grid2op/LearningToAlert) provides an algorithm to "solve" part of the grid2op actions (sending alert at the right time to a possible human operator)
-PowSyBl (Power System Blocks) is an open-source library written in Java, dedicated to electrical grid modeling, visualization and simulation. The power system blocks may be used through Python scripts for quick operations, but also be assembled to build state-of-the-art applications.
-
+  PowSyBl (Power System Blocks) is an open-source library written in Java, dedicated to electrical grid modeling, visualization and simulation. The power system blocks may be used through Python scripts for quick operations, but also be assembled to build state-of-the-art applications.

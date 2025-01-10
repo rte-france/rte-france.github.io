@@ -11,13 +11,13 @@ plugins:
 collections:
   projects_lfe:
     output: true
-    permalink: /projects/lfe/:path/
+    permalink: /projects-lfe/:path/
   projects_rte:
     output: true
-    permalink: /projects/rte/:path/
+    permalink: /projects-rte/:path/
   projects_contribution:
     output: true
-    permalink: /projects/contribution/:path/
+    permalink: /projects-contribution/:path/
 
 include:
   - _pages

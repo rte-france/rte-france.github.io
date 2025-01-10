@@ -2,102 +2,97 @@
 layout: default
 ---
 
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
-{% if page.breadcrumbs != null %}
-{% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
-{% unless paginator %}
-{% include breadcrumbs.html %}
-{% endunless %}
-{% endif %}
-
 <div id="main" role="main">
+  {% assign breadcrumbs_enabled = site.breadcrumbs %} {% if page.breadcrumbs != null %} {% assign breadcrumbs_enabled =
+  page.breadcrumbs %} {% endif %} {% if page.url != "/" and breadcrumbs_enabled %} {% unless paginator %} {% include
+  breadcrumbs.html %} {% endunless %} {% endif %}
 
-    <article {% if page.locale %}
-             lang="{{ page.locale }}" {% endif %}>
-        {% if page.header.image %}
-        <div style="margin-top: 2em; margin-bottom: 2em">
-            <img src="{{ page.header.image }}"
-                 style="width: 80%; display: block; margin: auto">
+  <article {% if page.locale %} lang="{{ page.locale }}" {% endif %}>
+    {% if page.title %}
+    <meta
+      itemprop="headline"
+      content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}"
+    />
+    {% endif %} {% if page.excerpt %}
+    <meta
+      itemprop="description"
+      content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+    />
+    {% endif %}
+
+    <div class="page__inner-wrap">
+      <header class="page__title">
+        <div class="page__title-text">
+          {% include page__meta.html %} {% if page.header.image %}
+          <div class="page__title-logo">
+            <img src="{{ page.header.image }}" />
+          </div>
+          {% endif %} {% if page.header.title %}
+          <h1 id="page-title" itemprop="headline">
+            {{ page.title | markdownify | remove: "
+            <p>" | remove: "</p>
+            " }}
+          </h1>
+          <hr class="page__title-line" />
+          {% endif %}
         </div>
-        {% endif %}
-        {% if page.title %}
-        <meta itemprop="headline"
-              content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">
-        {% endif %}
-        {% if page.excerpt %}
-        <meta itemprop="description"
-              content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
-        {% endif %}
+      </header>
 
-        <div class="page__inner-wrap">
-
-            {% if page.show-title -%}
-            <header>
-                <h1 id="page-title" class="page__title" itemprop="headline">
-                    <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" |
-                        remove: "</p>" }}</a>
-                </h1>
-                {% include page__meta.html %}
-            </header>
-            {%- endif %}
-
-            <section class="page__content" itemprop="text">
-                <!-- buttons -->
-                <div style="margin-bottom: 20px">
-                    <div style="display: block; margin: auto">
-                        {% if page.license %}
-                        <div style="display:inline-block;position:relative;">
-                            <div><a href="{{ page.license-url }}" class="btn btn--primary"><i
-                                    class="fa-solid fa-file-contract"
-                                    style="margin-right:10px;"></i>{{
-                                page.license }}</a></div>
-                        </div>
-                        {% endif %}
-                        {% if page.github %}
-                        <div style="display:inline-block;position:relative;">
-                            <div><a href="{{ page.github }}" class="btn btn--primary"><i class="fa-brands fa-github"
-                                                                                         style="margin-right:10px;"></i>GitHub</a>
-                            </div>
-                        </div>
-                        {% endif %}
-                        {% if page.community %}
-                        <div style="display:inline-block;position:relative;">
-                            <div><a href="{{ page.community }}" class="btn btn--primary"><i
-                                    class="fa-solid fa-user-group"
-                                    style="margin-right:10px;"></i>Community</a>
-                            </div>
-                        </div>
-                        {% endif %}
-                        {% if page.website %}
-                        <div style="display:inline-block;position:relative;">
-                            <div><a href="{{ page.website }}" class="btn btn--primary"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"
-                                    style="margin-right:10px;"></i>Website</a>
-                            </div>
-                        </div>
-                        {% endif %}
-                        {% if page.documentation %}
-                        <div style="display:inline-block;position:relative;">
-                            <div><a href="{{ page.documentation }}" class="btn btn--primary"><i class="fa-solid fa-book"
-                                                                                                style="margin-right:10px;"></i>Documentation</a>
-                            </div>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-                {{ content }}
-            </section>
-
-            <footer class="page__meta">
-                {% if site.data.ui-text[site.locale].meta_label %}
-                <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-                {% endif %}
-                {% include page__taxonomy.html %}
-            </footer>
-
-            {% include post_pagination.html %}
+      <section class="page__content" itemprop="text">
+        <!-- buttons -->
+        <div style="margin-bottom: 20px">
+          <div style="display: block; margin: auto">
+            {% if page.license %}
+            <div style="display: inline-block; position: relative">
+              <div>
+                <a href="{{ page.license-url }}" class="btn btn--primary"
+                  ><i class="fa-solid fa-file-contract" style="margin-right: 10px"></i>{{ page.license }}</a
+                >
+              </div>
+            </div>
+            {% endif %} {% if page.github %}
+            <div style="display: inline-block; position: relative">
+              <div>
+                <a href="{{ page.github }}" class="btn btn--primary"
+                  ><i class="fa-brands fa-github" style="margin-right: 10px"></i>GitHub</a
+                >
+              </div>
+            </div>
+            {% endif %} {% if page.community %}
+            <div style="display: inline-block; position: relative">
+              <div>
+                <a href="{{ page.community }}" class="btn btn--primary"
+                  ><i class="fa-solid fa-user-group" style="margin-right: 10px"></i>Community</a
+                >
+              </div>
+            </div>
+            {% endif %} {% if page.website %}
+            <div style="display: inline-block; position: relative">
+              <div>
+                <a href="{{ page.website }}" class="btn btn--primary"
+                  ><i class="fa-solid fa-arrow-up-right-from-square" style="margin-right: 10px"></i>Website</a
+                >
+              </div>
+            </div>
+            {% endif %} {% if page.documentation %}
+            <div style="display: inline-block; position: relative">
+              <div>
+                <a href="{{ page.documentation }}" class="btn btn--primary"
+                  ><i class="fa-solid fa-book" style="margin-right: 10px"></i>Documentation</a
+                >
+              </div>
+            </div>
+            {% endif %}
+          </div>
         </div>
-    </article>
+        {{ content }}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+        <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %} {% include page__taxonomy.html %}
+      </footer>
+    </div>
+  </article>
 </div>

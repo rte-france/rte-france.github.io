@@ -3,13 +3,14 @@ title: "TRM algorithm"
 show-title: false
 layout: project
 excerpt: "TRM algorithm is a Maven package to compute the Transmission Reliability Margin."
+breadcrumbs: true
 header:
   image: /assets/images/trm/logo_trm.png
   teaser: assets/images/trm/logo_trm.png
 github: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
-documentation:  https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/blob/main/doc/algorithm.md
+documentation: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/blob/main/doc/algorithm.md
 community: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/discussions
 tags: [MPL2.0]
 ---
@@ -18,6 +19,7 @@ TRM algorithm is a Maven package that computes the Transmission Reliability Marg
 The project relies heavily on the [PowSyBl library](/projects/lfe/powsybl).
 
 Its key features include:
+
 - Importing data: market-based (D2CF or DACF) and real time snapshot networks, real time GLSK and CRAC.
 - Critical Network Element selection: select manually or automatically the interconnections or branches you want to study.
 - Operational condition alignment: align the desired operation conditions of the market-based network with those of the real time snapshot (such as remedial actions, branch connection state, inner exchanges, etc.).
