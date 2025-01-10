@@ -7,14 +7,14 @@ layout: default
 
   <div class="entries-grid">
     {% include documents-collection.html collection="projects_lfe" type="grid" category-title="Linux Foundation Energy
-    projects" %}
+    projects" url="projects-lfe" %}
   </div>
   <div class="entries-grid">
     {% include documents-collection.html collection="projects_rte" sort_by=page.sort_by sort_order=page.sort_order
-    type="grid" category-title="RTE-France Core projects" %}
+    type="grid" url="projects-rte" category-title="RTE-France Core projects" %}
   </div>
   <div class="entries-grid">
     {% include documents-collection.html collection="projects_contribution" sort_by=page.sort_by
-    sort_order=page.sort_order type="grid" category-title="RTE-France contributes in" %}
+    sort_order=page.sort_order url="projects-contribution" type="grid" category-title="RTE-France contributes in" %}
   </div>
 </div>

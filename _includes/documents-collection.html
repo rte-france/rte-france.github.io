@@ -1,4 +1,6 @@
-{% assign entries = include.entries | default: site[include.collection] | where_exp: "post", "post.hidden != true" %}
+{% assign entries_short = include.entries | default: site[include.collection] | where_exp: "post", "post.hidden != true"
+| sample: 3 %} {% assign entries_all = include.entries | default: site[include.collection] | where_exp: "post",
+"post.hidden != true"%}
 
 <div class="entries-grid-header">
   <hr class="header-line" />
@@ -6,5 +8,12 @@
   <hr class="header-line" />
 </div>
 <div class="entries-grid-items">
-  {%- for post in entries -%} {% include archive-single.html type=include.type %} {%- endfor -%}
+  {% if include.url and entries_all.size > entries_short.size %} {%- for post in entries_short -%} {% include
+  archive-single.html type=include.type %} {%- endfor -%} {% else %} {%- for post in entries_all -%} {% include
+  archive-single.html type=include.type %} {%- endfor -%} {% endif %}
 </div>
+{% if include.url and entries_all.size > entries_short.size %}
+<a class="see-more" href="{{ include.url | relative_url }}" rel="permalink" title="Voir tous les projets"
+  >Voir tous les projets</a
+>
+{% endif %}
