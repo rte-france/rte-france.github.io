@@ -6,7 +6,9 @@
 $background-color: #eeeeee !default;
 $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
-$primary-color: #00a6d9 !default;
+$primary-color: #244068 !default;
+$primary-high-contrast-color: #244068 !default;
+$primary-low-contrast-color: #00a6d9 !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
 $link-color: #393e46 !default;
@@ -52,6 +54,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   .site-title {
     //RTE title size
     font-size: 1.5rem;
+    text-decoration-color: $primary-high-contrast-color;
   }
 }
 
@@ -60,11 +63,27 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  color: $primary-high-contrast-color;
+
+  .breadcrumbs {
+    margin: 0;
+
+    ol {
+      width: auto;
+      float: none;
+    }
+  }
 }
 
 .masthead {
+  background-color: #fff;
+
   .masthead__inner-wrap {
     padding: 0;
+
+    .greedy-nav {
+      background-color: transparent;
+    }
   }
 }
 
@@ -80,7 +99,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
       height: 2px; // line weight
       border: none;
       flex: 1 1 auto;
-      background-color: $primary-color;
+      background-color: $primary-low-contrast-color;
     }
   }
 
@@ -103,12 +122,15 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     .grid__item {
       width: 100%;
       margin: 0;
+
       p {
         margin: 0;
       }
+
       .archive__item-teaser {
         max-height: 200px;
       }
+
       .archive__item-excerpt {
         padding: 0rem 1rem;
       }
@@ -128,6 +150,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .archive__item {
   position: relative;
+
   .archive__item-link {
     position: absolute;
     top: 0;
@@ -136,5 +159,50 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     right: 0;
     cursor: pointer;
     z-index: 10;
+  }
+}
+
+#footer.page__footer {
+  .page__footer-follow {
+    font-size: 0.8rem;
+  }
+}
+
+.see-more {
+  margin-left: auto;
+}
+
+.page__title {
+  display: flex;
+  gap: 2rem;
+
+  .page__title-text {
+    width: fit-content;
+
+    p,
+    h1 {
+      margin: 0;
+    }
+
+    hr {
+      height: 2px; // line weight
+      border: none;
+      margin: 0;
+      background-color: $primary-low-contrast-color;
+    }
+  }
+
+  .page__title-logo {
+    display: flex;
+    max-width: 20rem;
+    flex: 1 1 0;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    img {
+      max-width: 20rem;
+      max-height: 20rem;
+      margin: auto;
+    }
   }
 }

@@ -1,7 +1,8 @@
 remote_theme: mmistakes/minimal-mistakes@4.26.2
 title: Open Source Strategy
 logo: assets/images/RTE_LogoSeul_RVB.png
-copyright: RTE France. Unless otherwise indicated, content is licensed under CC-BY-4.0.
+copyright_text: RTE France. Unless otherwise indicated, content is licensed under
+copyright: CC-BY-4.0.
 copyright_url: https://creativecommons.org/licenses/by/4.0/
 
 plugins:
