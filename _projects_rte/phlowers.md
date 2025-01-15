@@ -1,6 +1,5 @@
 ---
 title: "Phlowers"
-show-title: false
 layout: project
 excerpt: "Phlowers is a set of physics-based libraries for power lines studies"
 header:

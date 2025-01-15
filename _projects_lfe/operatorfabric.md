@@ -1,6 +1,5 @@
 ---
 title: OperatorFabric
-show-title: false
 layout: project
 excerpt: OperatorFabric is a modular, extensible, industrial-strength platform for alarming and coordination processes.
 header:

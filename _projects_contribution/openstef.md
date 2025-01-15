@@ -1,6 +1,5 @@
 ---
 title: "OpenSTEF"
-show-title: false
 layout: project
 excerpt: OpenSTEF is a Python package designed for generating short-term forecasts in the energy sector.
 header:
