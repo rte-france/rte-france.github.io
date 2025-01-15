@@ -29,7 +29,7 @@ layout: default
                     {% include page__meta.html %}
                     {% if page.header.image %}
                     <div class="page__title-logo">
-                        <img src="{{ page.header.image }}" />
+                        <img src="{{ page.header.image }}"/>
                     </div>
                     {% endif %}
                 </div>
@@ -37,7 +37,7 @@ layout: default
 
             <section class="page__content" itemprop="text">
                 <!-- buttons -->
-                <div style="margin-bottom: 20px">
+                <div class="project-btns" style="margin-bottom: 20px">
                     <div style="display: block; margin: auto">
                         {% if page.license %}
                         <div style="display:inline-block;position:relative;">
@@ -88,8 +88,6 @@ layout: default
                 {% endif %}
                 {% include page__taxonomy.html %}
             </footer>
-
-            {% include post_pagination.html %}
         </div>
     </article>
 </div>

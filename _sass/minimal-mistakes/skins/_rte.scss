@@ -8,7 +8,7 @@ $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
 $primary-color: #244068 !default;
 $primary-high-contrast-color: #244068 !default;
-$primary-low-contrast-color: #00a6d9 !default;
+$primary-low-contrast-color: #244068 !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
 $footer-background-color: $primary-color !default;
 $link-color: #393e46 !default;
@@ -43,18 +43,21 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   }
 }
 
-.greedy-nav .site-logo {
-  img {
-    //RTE logo size
-    height: 5rem;
-    width: 5rem;
-    max-height: 5rem;
+.greedy-nav {
+  .site-logo {
+    img {
+      //RTE logo
+      height: 5rem;
+      width: 5rem;
+      max-height: 5rem;
+    }
   }
 
-  .site-title {
-    //RTE title size
+  a.site-title {
+    //RTE title
     font-size: 1.5rem;
     text-decoration-color: $primary-high-contrast-color;
+    color: $primary-high-contrast-color;
   }
 }
 
@@ -205,4 +208,8 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
       margin: auto;
     }
   }
+}
+
+.project-btns .btn {
+  font-weight: unset;
 }
