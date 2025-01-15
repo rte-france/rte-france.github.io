@@ -2,26 +2,18 @@
 layout: default
 ---
 
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
-{% if page.breadcrumbs != null %}
-{% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
-{% unless paginator %}
-{% include breadcrumbs.html %}
-{% endunless %}
-{% endif %}
-
 <div id="main" role="main">
+    {% assign breadcrumbs_enabled = site.breadcrumbs %}
+    {% if page.breadcrumbs != null %}
+    {% assign breadcrumbs_enabled = page.breadcrumbs %}
+    {% endif %}
+    {% if page.url != "/" and breadcrumbs_enabled %}
+    {% unless paginator %}
+    {% include breadcrumbs.html %}
+    {% endunless %}
+    {% endif %}
 
-    <article {% if page.locale %}
-             lang="{{ page.locale }}" {% endif %}>
-        {% if page.header.image %}
-        <div style="margin-top: 2em; margin-bottom: 2em">
-            <img src="{{ page.header.image }}"
-                 style="width: 80%; display: block; margin: auto">
-        </div>
-        {% endif %}
+    <article {% if page.locale %} lang="{{ page.locale }}" {% endif %}>
         {% if page.title %}
         <meta itemprop="headline"
               content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -32,20 +24,20 @@ layout: default
         {% endif %}
 
         <div class="page__inner-wrap">
-
-            {% if page.show-title -%}
-            <header>
-                <h1 id="page-title" class="page__title" itemprop="headline">
-                    <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" |
-                        remove: "</p>" }}</a>
-                </h1>
-                {% include page__meta.html %}
+            <header class="page__title">
+                <div class="page__title-text">
+                    {% include page__meta.html %}
+                    {% if page.header.image %}
+                    <div class="page__title-logo">
+                        <img src="{{ page.header.image }}"/>
+                    </div>
+                    {% endif %}
+                </div>
             </header>
-            {%- endif %}
 
             <section class="page__content" itemprop="text">
                 <!-- buttons -->
-                <div style="margin-bottom: 20px">
+                <div class="project-btns" style="margin-bottom: 20px">
                     <div style="display: block; margin: auto">
                         {% if page.license %}
                         <div style="display:inline-block;position:relative;">
@@ -96,8 +88,6 @@ layout: default
                 {% endif %}
                 {% include page__taxonomy.html %}
             </footer>
-
-            {% include post_pagination.html %}
         </div>
     </article>
 </div>

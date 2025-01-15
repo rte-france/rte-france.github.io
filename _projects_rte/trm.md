@@ -1,6 +1,5 @@
 ---
 title: "TRM algorithm"
-show-title: false
 layout: project
 excerpt: "TRM algorithm is a Maven package to compute the Transmission Reliability Margin."
 header:
@@ -15,7 +14,7 @@ tags: [MPL2.0]
 ---
 
 TRM algorithm is a Maven package that computes the Transmission Reliability Margin, aiming to be a translation in Java code of the [article 22 of the CACM regulation 2015/1222](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1222#d1e2148-24-1).
-The project relies heavily on the [PowSyBl library](/projects/lfe/powsybl).
+The project relies heavily on the [PowSyBl library](/powsybl).
 
 Its key features include:
 - Importing data: market-based (D2CF or DACF) and real time snapshot networks, real time GLSK and CRAC.

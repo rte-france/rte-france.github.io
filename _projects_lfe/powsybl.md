@@ -1,6 +1,5 @@
 ---
 title: "PowSyBl"
-show-title: false
 layout: project
 excerpt: "PowSyBl is a an open-source set of Power System Blocks dedicated to grid analysis, visualization, and simulation."
 header:

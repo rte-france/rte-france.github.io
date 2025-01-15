@@ -1,6 +1,5 @@
 ---
 title: "OR-Tools"
-show-title: false
 layout: project
 excerpt: OR-Tools is an open source software suite for optimization.
 header:

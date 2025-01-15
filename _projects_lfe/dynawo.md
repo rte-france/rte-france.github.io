@@ -1,6 +1,5 @@
 ---
 title: "Dynawo"
-show-title: false
 layout: project
 excerpt: "Dynaωo is an open-source hybrid C++/Modelica suite for power system simulation."
 header:

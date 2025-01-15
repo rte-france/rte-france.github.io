@@ -1,6 +1,5 @@
 ---
 title: "Seapath"
-show-title: false
 layout: project
 excerpt: "Seapath helps create and manage a cluster of virtual machines optimized for real-time workloads"
 header:
