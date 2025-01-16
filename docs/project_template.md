@@ -3,8 +3,8 @@ title: # Put a title for your project
 layout: project
 excerpt: # a brief phrase that will show up on the home page (truncated to 200 characters)
 header:
-    image: # the image / logo shown on the project page
-    teaser: # a small thumbnail shown on the home page
+    image: # the image / logo shown on the project page (please try to use SVG format)
+    teaser: # a small thumbnail shown on the home page (please try to use SVG format)
 github: # a link to your GitHub page (optional, remove line if not used)
 website: # a link to your website (optional, remove line if not used)
 license: # your license(s) (optional, remove line if not used)

@@ -3,8 +3,8 @@ title: "Phlowers"
 layout: project
 excerpt: "Phlowers is a set of physics-based libraries for power lines studies"
 header:
-    image: /assets/images/phlowers/phlowers_fullsize_txt_banner.png
-    teaser: assets/images/phlowers/phlowers_fullsize_txt_banner.png
+    image: /assets/images/phlowers/phlowers_fullsize_txt_banner.svg
+    teaser: assets/images/phlowers/phlowers_fullsize_txt_banner.svg
 github: https://github.com/phlowers
 license: MPL 2.0
 license-url: https://github.com/phlowers/.github/blob/main/LICENSE
