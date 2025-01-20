@@ -1,0 +1,20 @@
+{% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<div class="masthead">
+    <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+            <a href="{{ '/' | relative_url }}">
+
+                <nav id="site-nav" class="greedy-nav">
+                    <div class="site-logo"><img src="{{ logo_path | relative_url }}"
+                                                alt="{{ site.masthead_title | default: site.title }}">
+                    </div>
+                    <div class="site-title">
+                        {{ site.masthead_title | default: site.title }}
+                        {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+                    </div>
+                </nav>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,22 +1,23 @@
 {% if post.header.teaser %} {% capture teaser %}{{ post.header.teaser }}{% endcapture %} {% else %} {% assign teaser =
 site.teaser %} {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-    <article class="archive__item card" itemscope itemtype="https://schema.org/CreativeWork" {% if post.locale %}
-             lang="{{ post.locale }}" {% endif %}>
-        <a class="archive__item-link" href="{{ post.url | relative_url }}"/>
-        {% if include.type == "grid" and teaser %}
-        <div class="archive__item-teaser">
-            <a href="{{ post.url | relative_url }}" rel="permalink"><img src="{{ teaser | relative_url }}" alt=""/></a>
-        </div>
-        {% endif %}
-        {% include page__meta.html type=include.type %}
-        {% if post.excerpt %}
-        <div>
-            <p class="archive__item-excerpt" itemprop="description">
-                {{ post.excerpt | markdownify | strip_html | truncate: 200 }}
-            </p>
-        </div>
-        {% endif %}
-    </article>
-</div>
+<a class="archive__item-link" href="{{ post.url | relative_url }}">
+    <div class="{{ include.type | default: 'list' }}__item">
+        <article class="archive__item card" itemscope itemtype="https://schema.org/CreativeWork" {% if post.locale %}
+                 lang="{{ post.locale }}" {% endif %}>
+            {% if include.type == "grid" and teaser %}
+            <div class="archive__item-teaser">
+                <img src="{{ teaser | relative_url }}" alt=""/>
+            </div>
+            {% endif %}
+            {% include page__meta.html type=include.type %}
+            {% if post.excerpt %}
+            <div>
+                <p class="archive__item-excerpt" itemprop="description">
+                    {{ post.excerpt | markdownify | strip_html | truncate: 200 }}
+                </p>
+            </div>
+            {% endif %}
+        </article>
+    </div>
+</a>
