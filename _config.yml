@@ -11,6 +11,9 @@ plugins:
   - jekyll-include-cache
 
 collections:
+  strategy:
+    output: true
+    permalink: /:path/
   projects_lfe:
     output: true
     permalink: /:path/
