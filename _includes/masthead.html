@@ -3,24 +3,24 @@
 <div class="masthead">
     <div class="masthead__inner-wrap">
         <div class="masthead__menu">
-            <a href="{{ '/' | relative_url }}">
-
-                <nav id="site-nav" class="greedy-nav">
-                    <div class="site-logo"><img src="{{ logo_path | relative_url }}"
-                                                alt="{{ site.masthead_title | default: site.title }}">
-                    </div>
-                    <div class="site-title">
-                        {{ site.masthead_title | default: site.title }}
-                        {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-                    </div>
-                </nav>
-            </a>
-        </div>
-        <div>
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href='/index.html'>Home</a></li>
-                    <li><a href='/_pages/index.html'>Projects</a></li>
+            <nav id="site-nav" class="greedy-nav">
+                {% unless logo_path == empty %}
+                <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+                {% endunless %}
+                <a class="site-title" href="{{ '/' | relative_url }}">
+                    {{ site.masthead_title | default: site.title }}
+                    {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+                </a>
+                <ul class="visible-links">
+                    {%- for link in site.data.navigation.main -%}
+                    <li class="masthead__menu-item">
+                        <a
+                                href="{{ link.url | relative_url }}"
+                                {% if link.description %} title="{{ link.description }}"{% endif %}
+                                {% if link.target %} target="{{ link.target }}"{% endif %}
+                        >{{ link.title }}</a>
+                    </li>
+                    {%- endfor -%}
                 </ul>
             </nav>
         </div>
