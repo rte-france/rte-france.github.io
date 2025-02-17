@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  {{ content }}
+
+  <div class="entries-grid">
+    {% include documents-collection.html collection="projects_lfe" type="grid" category-title="Linux Foundation Energy
+    projects" %}
+  </div>
+  <div class="entries-grid">
+    {% include documents-collection.html collection="projects_rte" sort_by=page.sort_by sort_order=page.sort_order
+    type="grid" category-title="RTE-France projects" %}
+  </div>
+  <div class="entries-grid">
+    {% include documents-collection.html collection="projects_contribution" sort_by=page.sort_by
+    sort_order=page.sort_order type="grid" category-title="RTE-France contributes in" %}
+  </div>
+</div>
