@@ -1,7 +1,6 @@
 # main links
 main:
   - title: "Strategy"
-    url: /index
+    url: /
   - title: "Projects"
     url: /projects
-
