@@ -1,7 +1,7 @@
 ---
 title: "Seapath"
 layout: project
-excerpt: "Seapath helps create and manage a cluster of virtual machines optimized for real-time workloads"
+excerpt: "Seapath helps create and manage a cluster of virtual machines optimized for real-time workloads."
 header:
     image: /assets/images/seapath/seapath.svg
     teaser: assets/images/seapath/seapath.svg

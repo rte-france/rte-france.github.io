@@ -1,7 +1,7 @@
 ---
 title: "Phlowers"
 layout: project
-excerpt: "Phlowers is a set of physics-based libraries for power lines studies"
+excerpt: "Phlowers is a set of physics-based libraries for power lines studies."
 header:
     image: /assets/images/phlowers/phlowers_fullsize_txt_banner.svg
     teaser: assets/images/phlowers/phlowers_fullsize_txt_banner.svg
