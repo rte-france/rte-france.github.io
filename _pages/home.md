@@ -2,19 +2,21 @@
 layout: home
 classes: wide
 permalink: /
+title: Manifesto
 ---
 
-# Manifesto
+We believe that our corporate mission as a Transmission System Operator, and our transformation to meet tomorrow's energy
+challenges, can only be achieved efficiently through open source collaboration.  
 
-We believe that our corporate mission as Transmission System Operator, and our transformation to meet tomorrows' energy
-challenges can only be achieved efficiently through open source collaboration. Open source is not only an extremely efficient
-way to develop software and share intellectual property: it is a philosophy that empowers individuals, fosters collaboration,
-and drives innovation. By embracing collective intelligence and transparency, and by pooling efforts and skills, open source
-enables us to build better, more secure, and more sustainable technology. It breaks down barriers, accelerates learning,
-and federates contribution for the benefit of all stakeholders. We believe that open source technology is the future of energy.
+Open source is not only an extremely efficient way to develop software and share intellectual property: it is a 
+philosophy that empowers individuals, fosters collaboration, and drives innovation. 
+By embracing collective intelligence and transparency, and by pooling efforts and skills, open source enables us to 
+build better, more secure, and more sustainable technology. It breaks down barriers, accelerates learning,
+and federates contribution for the benefit of all stakeholders.  
 
+We believe that open source technology is the future of energy.
 
-![LFE strategic member](/assets/images/lf-energy-member-strategic-color.svg)
+<p style="text-align: center"><img src="/assets/images/lf-energy-member-strategic-color.svg" alt="LFE strategic member" width="60%"/></p>
 
 In the software world, open source has become a dominant strategy. Open source is a software development model
 based on a license that allows free access to the source code, free usage, modifications, and derived works, as
