@@ -6,17 +6,13 @@ permalink: /
 
 # Manifesto
 
-We believe that our expertise in the energy transmission sector should be open, accessible, and shared.
-Open source is not only a way to develop software: it is a philosophy that empowers individuals,
-fosters collaboration, and drives innovation.
+We believe that our corporate mission as Transmission System Operator, and our transformation to meet tomorrows' energy
+challenges can only be achieved efficiently through open source collaboration. Open source is not only an extremely efficient
+way to develop software and share intellectual property: it is a philosophy that empowers individuals, fosters collaboration,
+and drives innovation. By embracing collective intelligence and transparency, and by pooling efforts and skills, open source
+enables us to build better, more secure, and more sustainable technology. It breaks down barriers, accelerates learning,
+and federates contribution for the benefit of all stakeholders. We believe that open source technology is the future of energy.
 
-By embracing transparency and collective effort, open source enables us to build better, more secure,
-and more ethical technology. It breaks down barriers, encourages learning, and ensures that progress
-benefits everyone, not just a select few.
-
-We stand for a world where ideas are free to grow, where communities thrive through cooperation, and
-where technology serves humanity, not corporate interests.  
-We believe than open source is our future.
 
 ![LFE strategic member](/assets/images/lf-energy-member-strategic-color.svg)
 
