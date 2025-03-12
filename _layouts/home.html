@@ -1,20 +1,21 @@
 ---
 layout: default
 ---
-
-<div id="main" role="main">
-  {{ content }}
-
-  <div class="entries-grid">
-    {% include documents-collection.html collection="projects_lfe" type="grid" category-title="Linux Foundation Energy
-    projects" %}
-  </div>
-  <div class="entries-grid">
-    {% include documents-collection.html collection="projects_rte" sort_by=page.sort_by sort_order=page.sort_order
-    type="grid" category-title="RTE-France projects" %}
-  </div>
-  <div class="entries-grid">
-    {% include documents-collection.html collection="projects_contribution" sort_by=page.sort_by
-    sort_order=page.sort_order type="grid" category-title="RTE-France contributes in" %}
-  </div>
-</div>
+<main id="main">
+    <article {% if page.locale %} lang="{{ page.locale }}" {% endif %}>
+        {% if page.title %}
+        <meta itemprop="headline"
+              content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">
+        {% endif %}
+        {% if page.excerpt %}
+        <meta itemprop="description"
+              content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+        {% endif %}
+        <div class="page-title-with-line">
+        <hr class="header-line" />
+        <h1>{{page.title}}</h1>
+        <hr class="header-line" />
+        </div>
+        {{ content }}
+    </article>
+</main>

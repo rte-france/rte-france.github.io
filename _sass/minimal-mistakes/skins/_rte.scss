@@ -90,6 +90,19 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   }
 }
 
+hr.header-line {
+  height: 2px; // line weight
+  border: none;
+  flex: 1 1 auto;
+  background-color: $primary-low-contrast-color;
+}
+
+div.page-title-with-line {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .entries-grid {
   display: flex;
   flex-direction: column;
@@ -136,6 +149,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
       .archive__item-excerpt {
         padding: 0rem 1rem;
+        height: 5em;
       }
     }
   }
