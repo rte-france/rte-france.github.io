@@ -1,7 +1,8 @@
 # Open Source at RTE: A Dedicated Website
 This GitHub Pages website provides a comprehensive overview of RTE’s involvement in Open Source. It explains the reasons behind RTE’s commitment to Open Source and highlights the various projects where RTE is actively contributing. Additionally, it serves as a central hub for accessing the GitHub repositories of our main contributions.
 
-You can access the website at https://opensource.rte-france.com
+You can access the website at https://rte-france.github.io
+DNS upate to come (March or April) for https://opensource.rte-france.com
 
 ## Adding an entry to your project
 
