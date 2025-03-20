@@ -12,6 +12,7 @@ license-url: https://opfab.github.io/documentation/current/community/#license_an
 documentation: https://opfab.github.io/
 community: https://lfenergy.slack.com/channels/operator-fabric
 tags: [LFEnergy, MPL2.0]
+permalink: /projects/operatorfabric
 ---
 
 # A Smart Assistant For System Operators

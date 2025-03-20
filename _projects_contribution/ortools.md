@@ -12,6 +12,7 @@ license-url: https://github.com/google/or-tools/blob/stable/LICENSE
 documentation: https://developers.google.com/optimization
 community: https://github.com/google/or-tools/discussions
 tags: [ Apache2.0, contribution ]
+permalink: /projects/ortools
 ---
 
 OR-Tools is an open source software suite for optimization, tuned for tackling the world's toughest problems in vehicle

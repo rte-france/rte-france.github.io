@@ -11,6 +11,7 @@ license-url: https://www.mozilla.org/en-US/MPL/2.0/
 documentation:  https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/blob/main/doc/algorithm.md
 community: https://github.com/rte-france/Transmission-Reliability-Margin-Algorithm/discussions
 tags: [MPL2.0]
+permalink: /projects/trm
 ---
 
 TRM algorithm is a Maven package that computes the Transmission Reliability Margin, aiming to be a translation in Java code of the [article 22 of the CACM regulation 2015/1222](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1222#d1e2148-24-1).

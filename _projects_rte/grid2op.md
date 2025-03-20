@@ -12,6 +12,7 @@ license-url: https://github.com/Grid2op/grid2op/blob/master/LICENSE.md
 documentation: https://grid2op.readthedocs.io/en/latest/
 community: https://discord.gg/cYsYrPT
 tags: [MPL2.0]
+permalink: /projects/grid2op
 ---
 
 

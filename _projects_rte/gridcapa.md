@@ -12,6 +12,7 @@ license-url: https://www.mozilla.org/en-US/MPL/2.0/
 documentation:  https://powsybl.readthedocs.io/projects/openrao/en/latest/castor/applications.html
 community: https://github.com/farao-community/.github/blob/master/CONTRIBUTING.md
 tags: [MPL2.0]
+permalink: /projects/gridcapa
 ---
 
 GridCapa is an app used to run capacity calculation processes on the European electric network.
