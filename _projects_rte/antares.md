@@ -8,8 +8,8 @@ header:
 github: https://github.com/AntaresSimulatorTeam/Antares_Simulator
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
-documentation: https://antares-simulator.org/ 
-community: 
+documentation: https://antares-simulator.readthedocs.io/
+website: https://antares-simulator.org/
 tags: [MPL2.0]
 ---
 
