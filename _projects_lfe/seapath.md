@@ -12,6 +12,7 @@ license-url: https://www.apache.org/licenses/LICENSE-2.0
 documentation:  https://lf-energy.atlassian.net/wiki/spaces/SEAP
 community: https://lfenergy.slack.com/archives/seapath
 tags: [Apache2.0]
+permalink: /projects/seapath
 ---
 
 Seapath helps create and manage a cluster of virtual machines optimized for real-time workloads.

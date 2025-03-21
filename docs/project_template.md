@@ -12,6 +12,7 @@ license-url: # a link to your license(s) page (optional, remove line if not used
 documentation: # a link to your documentation page (optional, remove line if not used)
 community: # a link to your community (slack, github, ...) page (optional, remove line if not used)
 tags: # some tags to describe your project
+permalink: # permalink to your page, must start with "/projects/" (see other projects for example)
 ---
 
 Free text here (written in markdown) to describe your project.

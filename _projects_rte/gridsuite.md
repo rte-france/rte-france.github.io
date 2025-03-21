@@ -12,6 +12,7 @@ license-url: https://www.mozilla.org/en-US/MPL/2.0/
 documentation:  https://github.com/gridsuite/gridsuite.github.io/wiki
 community: https://gridsuite.slack.com
 tags: [MPL2.0]
+permalink: /projects/gridsuite
 ---
 
 GridSuite is a suite of apps to run and study power systems. Its key features include:

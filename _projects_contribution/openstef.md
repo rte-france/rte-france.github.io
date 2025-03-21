@@ -12,6 +12,7 @@ license-url: https://github.com/OpenSTEF/.github/blob/main/LICENSE
 documentation: https://openstef.github.io/openstef/index.html
 community: https://slack.lfenergy.org/
 tags: [ LFEnergy, MPL2.0, contribution ]
+permalink: /projects/openstef
 ---
 
 The OpenSTEF project provides a valuable portfolio of automated, Open Source machine learning pipelines that provide

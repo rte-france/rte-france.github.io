@@ -11,6 +11,7 @@ license-url: https://github.com/phlowers/.github/blob/main/LICENSE
 documentation: https://github.com/phlowers/.github/blob/main/profile/README.md
 community: https://phlowerscommunity.slack.com
 tags: [MPL2.0]
+permalink: /projects/phlowers
 ---
 
 Phlowers is an open-source library suite for studying power lines, written in Python.

@@ -11,6 +11,7 @@ license-url: https://www.mozilla.org/en-US/MPL/2.0/
 documentation: https://antares-simulator.readthedocs.io/
 website: https://antares-simulator.org/
 tags: [MPL2.0]
+permalink: /projects/antares
 ---
 
 Antares-Simulator is a power system simulator designed for anyone who values quantifying the adequacy or economic
