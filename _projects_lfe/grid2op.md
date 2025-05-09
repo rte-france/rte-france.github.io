@@ -6,7 +6,7 @@ header:
     image: /assets/images/grid2op/grid2op_logo.svg
     teaser: /assets/images/grid2op/grid2op_logo.svg
 github: https://github.com/Grid2op
-website: https://grid2op.readthedocs.io/en/latest/
+website: https://lfenergy.org/projects/grid2op/
 license: MPL 2.0
 license-url: https://github.com/Grid2op/grid2op/blob/master/LICENSE.md
 documentation: https://grid2op.readthedocs.io/en/latest/
