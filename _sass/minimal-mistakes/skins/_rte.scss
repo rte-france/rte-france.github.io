@@ -17,6 +17,12 @@ $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 @import "minimal-mistakes"; // import minimal-mistakes mixines
 
+/* Nunito font for all the website */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,400&display=swap');
+$global-font-family: 'Nunito', sans-serif;
+$header-font-family: 'Nunito', sans-serif;
+$caption-font-family: 'Nunito', sans-serif;
+
 .page__footer {
   color: #fff !important; // override
 }
@@ -58,6 +64,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     font-size: 1.5rem;
     text-decoration-color: $primary-high-contrast-color;
     color: $primary-high-contrast-color;
+    font-family: $header-font-family;
   }
 }
 
@@ -70,6 +77,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
   .breadcrumbs {
     margin: 0;
+    font-family: $global-font-family;
 
     ol {
       width: auto;
@@ -87,6 +95,10 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
     .greedy-nav {
       background-color: transparent;
     }
+  }
+
+  .masthead__menu-item {
+    font-family: $global-font-family;
   }
 }
 
@@ -226,4 +238,5 @@ div.page-title-with-line {
 
 .project-btns .btn {
   font-weight: unset;
+  font-family: $global-font-family;
 }
