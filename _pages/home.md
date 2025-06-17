@@ -47,4 +47,6 @@ For RTE, the expected benefits of this software development model are:
   
 Today, RTE is actively involved in several LF Energy projects to build the industrial-grade software solutions that meet the needs of its core business.
 
+{% include verbatim.html %}
+
 {% include lfe-buttons.html %}

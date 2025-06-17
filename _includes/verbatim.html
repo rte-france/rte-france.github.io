@@ -1,0 +1,76 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1,400&display=swap" rel="stylesheet">
+    <style>
+        .verbatim {
+            display: block;
+            padding: 40px 5vw; /* adds spacing on the sides */
+            overflow: hidden;
+        }
+
+        .verbatim-image {
+            float: left;
+            shape-outside: circle();
+            clip-path: circle();
+            width: 220px;
+            height: 220px;
+            margin: 0 30px 20px 0;
+        }
+
+        .verbatim-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .verbatim-content p {
+            margin: 0 0 10px 0;
+            font-family: 'Nunito', sans-serif;
+            font-style: italic;
+        }
+
+        .verbatim-signature p {
+            margin: 0 0 10px 0;
+            font-style: normal;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .verbatim-image {
+                float: none;
+                shape-outside: none;
+                clip-path: none;
+                margin: 0 auto 20px auto;
+                display: block;
+            }
+
+            .verbatim {
+                text-align: center;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="verbatim">
+    <div class="verbatim-image">
+        <img src="assets/images/home/xavier-piechaczyk-rte-portrait.png"
+             alt="Xavier Piechaczyk, President of RTE"/>
+    </div>
+    <div class="verbatim-content">
+        <p>
+            "Open source is a powerful driver of innovation, interoperability, and digital sovereignty. At RTE, we
+            believe collaboration is key to resilience and efficiency. The grid of tomorrow should not be built within
+            black boxes; shared standards and joint developments are essential to meet our digital roadmaps and keep
+            pace with the energy transition. We invite the entire ecosystem to shape the future of energy with us."
+        </p>
+    </div>
+    <div class="verbatim-signature">
+        <p>
+            Xavier Piechaczyk, President of RTE – Réseau de Transport d’Electricité
+        </p>
+    </div>
+</div>
+</body>
