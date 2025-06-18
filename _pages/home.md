@@ -2,7 +2,8 @@
 layout: home
 classes: wide
 permalink: /
-title: Manifesto
+title: Strategy
+subtitle: Manifesto
 ---
 
 We believe that our corporate mission as a Transmission System Operator, and our transformation to meet tomorrow's energy
