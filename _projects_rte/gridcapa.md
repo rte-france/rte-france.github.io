@@ -3,8 +3,8 @@ title: "GridCapa"
 layout: project
 excerpt: "GridCapa is an app to run capacity calculation processes."
 header:
-    image: /assets/images/gridcapa/logo-gridcapa.png
-    teaser: /assets/images/gridcapa/logo-gridcapa.png
+    image: /assets/images/gridcapa/logo-gridcapa.svg
+    teaser: /assets/images/gridcapa/logo-gridcapa.svg
 github: https://github.com/farao-community
 website: https://farao-community.github.io/
 license: MPL 2.0
