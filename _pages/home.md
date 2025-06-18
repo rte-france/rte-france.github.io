@@ -2,6 +2,7 @@
 layout: home
 classes: wide
 permalink: /
+title: Strategy
 subtitle: Manifesto
 ---
 
