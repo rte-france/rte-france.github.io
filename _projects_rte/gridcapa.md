@@ -6,10 +6,10 @@ header:
     image: /assets/images/gridcapa/logo-gridcapa.svg
     teaser: /assets/images/gridcapa/logo-gridcapa.svg
 github: https://github.com/farao-community
-website: https://farao-community.github.io/
+website: https://gridcapa.github.io/
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
-documentation:  https://powsybl.readthedocs.io/projects/openrao/en/latest/castor/applications.html
+documentation:  https://gridcapa.github.io/docs/about
 community: https://github.com/farao-community/.github/blob/master/CONTRIBUTING.md
 tags: [MPL2.0]
 permalink: /projects/gridcapa
