@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 150" width="500" height="150"
+     role="img" aria-label="Logo EEAC Poppins">
+  <defs>
+    <style type="text/css">
+      .logo-text {
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+      }
+    </style>
+  </defs>
+  <text class="logo-text" text-anchor="middle" x="50%" y="60%" dominant-baseline="middle">
+    <tspan fill="#800020">E</tspan><tspan fill="#8FD694">EAC</tspan>
+  </text>
+</svg>
