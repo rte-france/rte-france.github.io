@@ -24,15 +24,15 @@ is especially challenging. Oscillations may be observed using synchrophasors,
 but their installation costs and communication requirements are such that
 the power grid observability using synchrophasors remains limited.
 
-On the other hand, SCADA measurements have been in implementation
+in contrast, SCADA measurements have been in implementation
 since the 1970s and they outnumber the synchrophasors. 
 Specifically, SCADA measurements are available at almost every 
 synchronous generator as well as at the bulk interconnection 
 interface for most of the renewable generators in the power grid. 
 
-Since SCADA data is sampled asynchronously and in a somewhat random fashion,
+Since SCADA data is sampled asynchronously and in a somewhat random fashion, 
 they may be sufficient in order to locate the source of forced
-ocillation.
+ocillations.
 
 The code in this github project is an implementation of a statistical
 method for localizing the source of forced oscillations in a power system
