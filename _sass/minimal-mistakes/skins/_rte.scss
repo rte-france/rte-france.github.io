@@ -240,3 +240,42 @@ div.page-title-with-line {
   font-weight: unset;
   font-family: $global-font-family;
 }
+
+/* make visible links in header stack vertically when screen is too narrow (for mobile devices) */
+
+.masthead__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between logo/title and links */
+}
+
+.visible-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto; /* Push the links to the right of the logo and title */
+}
+
+.visible-links li {
+  margin-left: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .masthead__menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .visible-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    width: 100%; /* Ensure full width for vertical stacking */
+  }
+
+  .visible-links li {
+    margin-left: 0;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+}
+
