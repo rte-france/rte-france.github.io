@@ -1,7 +1,7 @@
 ---
 title: "Luciole"
 layout: project
-excerpt: "Luciole is RTE’s Design Dystem, supporting the design and development of all digital products."
+excerpt: "Luciole is RTE’s Design System, supporting the design and development of all new digital products."
 header:
     image: /assets/images/luciole/header-luciole.svg
     teaser: /assets/images/luciole/header-luciole.svg
@@ -13,7 +13,7 @@ documentation: https://opensource.rte-france.com/design-system-rte/?path=/docs/d
 permalink: /projects/luciole
 ---
 
-Luciole is RTE’s Design Dystem, supporting the design and development of all digital products. It ensures consistency, quality, and reliability across our interfaces, while promoting an accessible, clean, and inclusive design for everyone.
+Luciole is RTE’s Design System, supporting the design and development of all new digital products. It ensures consistency, quality, and reliability across our interfaces, while promoting an accessible, clean, and inclusive design for everyone.
 
 The Design System provides:
 - ready-to-use styles and components,
