@@ -1,7 +1,7 @@
 ---
 title: "Grid2op"
 layout: project
-excerpt: "Grid2Op a testbed platform to model sequential decision making in power systems."
+excerpt: "Grid2Op is a testbed platform to model sequential decision making in power systems."
 header:
     image: /assets/images/grid2op/grid2op_logo.svg
     teaser: /assets/images/grid2op/grid2op_logo.svg

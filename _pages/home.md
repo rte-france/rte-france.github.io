@@ -2,7 +2,8 @@
 layout: home
 classes: wide
 permalink: /
-title: Manifesto
+title: Strategy
+subtitle: Manifesto
 ---
 
 We believe that our corporate mission as a Transmission System Operator, and our transformation to meet tomorrow's energy
@@ -46,5 +47,7 @@ For RTE, the expected benefits of this software development model are:
 - Reduced vendor lock-in or customer-specific approaches that impede velocity and cost-efficiency.
   
 Today, RTE is actively involved in several LF Energy projects to build the industrial-grade software solutions that meet the needs of its core business.
+
+{% include verbatim.html %}
 
 {% include lfe-buttons.html %}

@@ -20,6 +20,6 @@ Ceph is a scalable, open-source storage platform that provides unified object, b
 RTE contributes to Ceph by submitting patches for issues detected while working on the [SEAPATH project](https://opensource.rte-france.com/projects/seapath).
 
 Examples:
- - [do not update Debian cache when package-install is disabled](https://github.com/ceph/ceph/pull/7127)
+ - [do not update Debian cache when package-install is disabled](https://github.com/ceph/ceph-ansible/pull/7127)
  - [cephadm.py: add timemaster to timesync services list](https://github.com/ceph/ceph/pull/56143)
- - [do not use update debian cache or try to install packages when package-install is disabled](https://github.com/ceph/ceph/pull/7451)
+ - [do not use update debian cache or try to install packages when package-install is disabled](https://github.com/ceph/ceph-ansible/pull/7451)
