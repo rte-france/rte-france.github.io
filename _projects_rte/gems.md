@@ -25,11 +25,11 @@ The ambition behind the **GEMS language** is to build and support **a community 
 
 GEMS has the key attributes required to support and sustain such a community.
 
-**Versatility** : GEMS is a generic optimisation language capable of representing a wide range of energy systems and use cases, from operational studies to long-term planning, across multiple energy carriers and scales.
+**Versatility**: GEMS is a generic optimization language capable of representing a wide range of energy systems and use cases, from operational studies to long-term planning, across multiple energy carriers and scales.
 
-**Code Stability and Maintainability** : By clearly separating model definition from problem resolution, GEMS promotes robust, modular, and maintainable code that can evolve over time without breaking existing models.
+**Code Stability and Maintainability**: By clearly separating model definition from problem resolution, GEMS promotes robust, modular, and maintainable code that can evolve over time without breaking existing models.
 
-**Interoperability / Interpretability** : GEMS relies on a self-contained and exhaustive mathematical formulation, ensuring that all modelling assumptions, variables, and constraints are explicitly defined. This guarantees unambiguous interpretability of models, which is a key enabler for true interoperability between tools, solvers, and modelling frameworks.
+**Interoperability / Interpretability**: GEMS relies on a self-contained and exhaustive mathematical formulation, ensuring that all modelling assumptions, variables, and constraints are explicitly defined. This guarantees unambiguous interpretability of models, which is a key enabler for true interoperability between tools, solvers, and modelling frameworks.
 
-Let's join the community !
+Let's join the community!
 
