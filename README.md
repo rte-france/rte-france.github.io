@@ -37,3 +37,36 @@ customizations
 is in the [_includes](_includes), [_layouts](_layouts), and [_sass](_sass) directories. These are meant to override or
 augment the theme's
 default resources.  
+
+### 🪟 Installation on Windows
+
+#### Install Ruby
+1. Go to the official RubyInstaller website https://rubyinstaller.org and download and install `rubyinstaller-devkit-3.1.4-1-x64.exe`  
+   ⚠️ **Important:**
+   - Do **not** install a more recent version than **3.1.4**
+   - During installation, select **both** Ruby base and MSYS2 Devkit
+2. Add Ruby to the Windows PATH to your Windows environment variables: X:...\Ruby31-x64\bin
+   (Adapt the path depending on where Ruby is installed.)
+3. To verify that Ruby is correctly installed, open PowerShell and run:
+```bash
+ruby -v
+```
+If successful, the Ruby version should be displayed.
+ 
+## Install Bundler and Jekyll
+```bash
+gem install bundler -v 2.3.26
+gem install jekyll
+```
+ 
+##Install Project Dependencies
+Navigate to the repository folder containing the Gemfile, install and run the local server :
+```bash
+bundle _2.3.26_ install
+bundle _2.3.26_ exec jekyll serve
+```
+ 
+## Open the Website
+Once the server is running, open your browser and go to:
+http://127.0.0.1:4000
+Your site should now be running locally
