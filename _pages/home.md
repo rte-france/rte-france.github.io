@@ -48,11 +48,6 @@ For RTE, the expected benefits of this software development model are:
   
 Today, RTE is actively involved in several LF Energy projects to build the industrial-grade software solutions that meet the needs of its core business.
 
-![UN Open Source Principles](/assets/images/UN.png){:style="display:block; margin-left:auto; margin-right:auto; margin-top:3em; margin-bottom:3em;"}
-
-RTE is an endorsing organization of the [United Nations Open Source Principles](https://opensource.un.org/en/news/united-nations-open-source-principles), a framework of eight guidelines for the use, development, and sharing of open source software:
-Open by Default, Contribute Back, Secure by Design, Foster Inclusive Participation, Design for Reusability, Provide Documentation, RISE (Recognize, Incentivize, Support, Empower), and Sustain and Scale.
-
 {% include verbatim.html %}
 
 {% include lfe-buttons.html %}
