@@ -3,8 +3,8 @@ title: EEAC
 layout: project
 excerpt: "Implementation of the *Extended Equal Area Criterion* to analyze the transient stability in transmission networks."
 header:
-    image: /assets/images/eeac/eeac_logo.svg
-    teaser: assets/images/eeac/eeac_logo.svg
+    image: /assets/images/eeac/eeac_logo.png
+    teaser: assets/images/eeac/eeac_logo.png
 github: https://github.com/rte-france/extended-equal-area-criterion
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
