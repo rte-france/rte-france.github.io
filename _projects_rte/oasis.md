@@ -3,8 +3,8 @@ title: OASIS
 layout: project
 excerpt: "OASIS is an implementation of a method to locate the source of forced oscillations in a power system."
 header:
-    image: /assets/images/oasis/oasis_logo.svg
-    teaser: assets/images/oasis/oasis_logo.svg
+    image: /assets/images/oasis/oasis_logo.png
+    teaser: assets/images/oasis/oasis_logo.png
 github: https://github.com/rte-france/oscillation-analysis-with-scada-data
 license: MPL 2.0
 license-url: https://www.mozilla.org/en-US/MPL/2.0/
