@@ -23,3 +23,4 @@ Within the [SEAPATH project](https://opensource.rte-france.com/projects/seapath)
 Examples:
  - [fai-cd: arm64 iso build support](https://github.com/faiproject/fai/commit/d080e1d9af8080e73a996d87e12ee2c292720132)
  - [fai-cd: add secureboot capability for AMD64](https://github.com/faiproject/fai/pull/134)
+ - [setup-storage: wait for LV device node before using it](https://github.com/faiproject/fai/pull/139)
