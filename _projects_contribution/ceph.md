@@ -23,3 +23,4 @@ Examples:
  - [do not update Debian cache when package-install is disabled](https://github.com/ceph/ceph-ansible/pull/7127)
  - [cephadm.py: add timemaster to timesync services list](https://github.com/ceph/ceph/pull/56143)
  - [do not use update debian cache or try to install packages when package-install is disabled](https://github.com/ceph/ceph-ansible/pull/7451)
+ - [deb/cephadm: only move the home of a user that has none](https://github.com/ceph/ceph/pull/73345)
