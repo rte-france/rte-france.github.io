@@ -3,8 +3,8 @@ title: EnerGNN
 layout: project
 excerpt: "A Graph Neural Network library for real-life energy networks."
 header:
-    image: /assets/images/energnn/energnn-horizontal-solor.svg
-    teaser: /assets/images/energnn/energnn-horizontal-solor.svg
+    image: /assets/images/energnn/energnn-horizontal-color.svg
+    teaser: /assets/images/energnn/energnn-horizontal-color.svg
 github: https://github.com/energnn/energnn
 license: MPL 2.0
 license-url: https://github.com/energnn/energnn/blob/main/LICENSE
