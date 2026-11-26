@@ -39,6 +39,10 @@ collaboration on open source technologies and standards. LF Energy serves as an 
 transparently governed open source technologies and standards that serve as the trustworthy, secure digital
 foundation for grid modernization and modern energy services.  
 
+In June 2026, the European Commission presented its [EU Open Source Strategy](https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy), which places open source at the center of the EU's technological sovereignty.
+The strategy notes that leading European industrial players in key sectors such as energy have already taken the lead in setting up [open source industrial platforms](https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy).
+LF Energy's position paper [Building Europe's Digital Grid Together](https://lfenergy.org/position-paper-building-europes-digital-grid-together/) argues that open source collaboration can become the strategic delivery model for Europe's energy digitalization.
+
 For RTE, the expected benefits of this software development model are:
 - An acceleration by reusing what exists and sharing efforts, allowing for faster and cheaper software development,
 - Industrial-grade software with improved modularity, interoperability, evolutivity, and shorter release time cycles,
