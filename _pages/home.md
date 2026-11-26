@@ -27,13 +27,13 @@ that they could leverage these licenses to organize their software strategies ar
 by pooling the development effort of software technology components that meet shared needs, hence enabling additive
 innovation and simultaneous gains in costs, time to market, and quality. Due to this efficiency, the model spread in
 the software technology and cloud sector, and then into industrial verticals such as telecommunications and automotive.
-This occurred under the aegis of foundations such as The Linux Foundation, which provide a neutral and proven governance
+This occurred under the aegis of foundations such as [The Linux Foundation](https://www.linuxfoundation.org/), which provide a neutral and proven governance
 framework to organize collaborations, build trust among investing partners, and establish state-of-the-art software
 development practices (cybersecurity, etc.).
 
 In early 2018, RTE took the gamble that the model could be transposed to the energy sector and decided to start a
 collaboration with Shuli Goodman at The Linux Foundation. This collaboration led to the creation of Linux Foundation
-Energy (LF Energy) in early 2019. Since then, RTE has played a leading role in the foundation as a Strategic Member.  
+Energy (LF Energy) in early 2019. Since then, RTE has played a leading role in the foundation as a [Strategic Member](https://lfenergy.org/members/).  
 LF Energy is a member-funded non-profit organization whose purpose is to accelerate the energy transition through
 collaboration on open source technologies and standards. LF Energy serves as an independent, neutral steward for
 transparently governed open source technologies and standards that serve as the trustworthy, secure digital
@@ -46,7 +46,7 @@ For RTE, the expected benefits of this software development model are:
 - Access, through collaboration, to wider and more diverse skills and viewpoints,
 - Reduced vendor lock-in or customer-specific approaches that impede velocity and cost-efficiency.
   
-Today, RTE is actively involved in several LF Energy projects to build the industrial-grade software solutions that meet the needs of its core business.
+Today, RTE is actively involved in several [LF Energy projects](/projects) to build the industrial-grade software solutions that meet the needs of its core business.
 
 {% include verbatim.html %}
 
